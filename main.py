@@ -1,4 +1,6 @@
 from YaseeWordCloud import YaseeWordCloud
+
+
 class Console:
     def __call__(self, *args, **kwargs):
         while True:
