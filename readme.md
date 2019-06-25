@@ -1,8 +1,11 @@
-yasee, as in "you see?",
-A data visualizer tailored for analyzing data provided from the writing center
-in University of California, Irvine. 
+yasee
+
+A data visualizer tailored for analyzing data provided from the writing center 
+in University of California, Irvine.
+
 
 Main contributor: lighttttt
+
 Faculty Adviser: Professor Percival Guevarra
 
 
