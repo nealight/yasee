@@ -12,8 +12,4 @@ Data inside that file is made up by me :)
 
 
 
-**LICENSE:**
-
-=========
-|| MIT ||
-=========
+**LICENSE:** MIT License 
