@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReportFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/ReportFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exp/panda_exp.py" beforeDir="false" afterPath="$PROJECT_DIR$/exp/panda_exp.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+            <state relative-caret-position="460">
+              <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
               <folding>
                 <element signature="e#430#447#0" expanded="true" />
               </folding>
@@ -86,7 +82,6 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="770" />
@@ -262,7 +257,7 @@
       <workItem from="1561413551389" duration="5000" />
       <workItem from="1561413917329" duration="257000" />
       <workItem from="1561418235569" duration="3672000" />
-      <workItem from="1561428731904" duration="2458000" />
+      <workItem from="1561428731904" duration="2570000" />
     </task>
     <task id="LOCAL-00001" summary="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library.">
       <created>1561421707897</created>
@@ -271,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561421707897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="6-24 NL1&#10;&#10;Can now output visit notes and rank their according to their frequencies (ranking now implemented in exp/panda_exp).">
+      <created>1561431318170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561431318170</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -307,7 +309,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6392000" />
+    <option name="totallyTimeSpent" value="6504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1440" height="770" extended-state="0" />
@@ -318,7 +320,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32890856" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32890856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,7 +383,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library." />
-    <option name="LAST_COMMIT_MESSAGE" value="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library." />
+    <MESSAGE value="6-24 NL1&#10;&#10;Can now output visit notes and rank their according to their frequencies (ranking now implemented in exp/panda_exp)." />
+    <option name="LAST_COMMIT_MESSAGE" value="6-24 NL1&#10;&#10;Can now output visit notes and rank their according to their frequencies (ranking now implemented in exp/panda_exp)." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/util/_decorators.py">
@@ -455,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        <state relative-caret-position="460">
+          <caret line="41" column="70" lean-forward="true" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
           <folding>
             <element signature="e#430#447#0" expanded="true" />
           </folding>
