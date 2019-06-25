@@ -6,7 +6,7 @@ in University of California, Irvine.**
 
 People
 ---
-Main contributor: lighttttt
+Main contributor: nealight
 
 Faculty Adviser: Professor Percival Guevarra
 
