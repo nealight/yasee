@@ -33,7 +33,7 @@ words_toStrip = {
 }
 
 report_file = ReportFile.ReportFile("../reports/report.xlsx")
-entries = report_file.get_visitNotes("SQ19")
+entries = report_file.get_visitNotes(report_file.get_sheet_names()[0])
 
 phrase_freq_dict = defaultdict(int)
 word_freq_dict = defaultdict(int)

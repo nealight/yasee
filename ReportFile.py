@@ -9,6 +9,10 @@ class NotWCReport(ReportFileError):
 
 
 class ReportFile:
+    #
+    # public:
+    #
+
     def __init__(self, file_path: str, is_wcreport: bool=True):
         self.is_wcreport = is_wcreport
 
@@ -26,6 +30,8 @@ class ReportFile:
     def __getitem__(self, item):
         return self.sheets[item]
 
+    def get_sheet_names(self):
+        return tuple(self.sheets.keys());
 
     def get_visitNotes(self, quarter: str):
         """Only applicable to UC Irvine Writing Center report files."""
@@ -36,6 +42,10 @@ class ReportFile:
 
         return tuple(i for i in self.sheets[quarter]["VisitNotes"])
 
+
+    #
+    # private:
+    #
 
 
 
