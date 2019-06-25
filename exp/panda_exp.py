@@ -25,15 +25,23 @@ columns = file
 import ReportFile
 from collections import defaultdict
 
+words_toStrip = {
+    "nan", "to", "the", "and", "a", "of", "her", "we", "she", "for", "about", "him", "his", "want",
+    "wanted", "so", "student", "in", "on", "had", "an", "some", "as", "be", "what", "through", "make",
+    "with", "not", "at", "is", "it", "from", "also", "out", "would", "which", "where", "for", "those",
+    "this", "how", "that", "was", "he", "could", "them"
+}
+
 report_file = ReportFile.ReportFile("../reports/report.xlsx")
-entries = report_file.get_visitNotes("FQ18")
+entries = report_file.get_visitNotes("SQ19")
 
 phrase_freq_dict = defaultdict(int)
 word_freq_dict = defaultdict(int)
 for entry in entries:
     words = str(entry).split()
     for word in words:
-        word_freq_dict[word] += 1
+        if word.lower() not in words_toStrip:
+            word_freq_dict[word] += 1
     for index in range(len(words) - 1):
         phrase = words[index] + ' ' + words[index + 1]
         phrase_freq_dict[phrase] += 1
