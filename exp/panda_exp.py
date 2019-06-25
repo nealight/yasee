@@ -32,7 +32,7 @@ words_toStrip = {
     "this", "how", "that", "was", "he", "could", "them"
 }
 
-report_file = ReportFile.ReportFile("../reports/report.xlsx")
+report_file = ReportFile.ReportFile("../../reports/report.xlsx")
 entries = report_file.get_visitNotes(report_file.get_sheet_names()[0])
 
 phrase_freq_dict = defaultdict(int)

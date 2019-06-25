@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +12,11 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_ReportFile_ReportFileTest_test_getitem.coverage" NAME="Unittests for test_ReportFile.ReportFileTest.test_getitem Coverage Results" MODIFIED="1561429647039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1561418899727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_in_test_ReportFile_py.coverage" NAME="Unittests in test_ReportFile.py Coverage Results" MODIFIED="1561421389633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1561438081625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_ReportFile_ReportFileTest.coverage" NAME="Unittests for test_ReportFile.ReportFileTest Coverage Results" MODIFIED="1561438071312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$test_ReportFile.coverage" NAME="test_ReportFile Coverage Results" MODIFIED="1561420754665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$panda_exp.coverage" NAME="panda_exp Coverage Results" MODIFIED="1561435066312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exp" />
+    <SUITE FILE_PATH="coverage/yasee$panda_exp.coverage" NAME="panda_exp Coverage Results" MODIFIED="1561438078040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exp" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -26,6 +27,11 @@
               <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="58" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/documentation/Week 1 Progress Report.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -40,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="665">
               <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
               <folding>
                 <element signature="e#430#447#0" expanded="true" />
@@ -49,12 +55,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="266">
-                <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <first_editor relative-caret-position="190">
+                <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               </first_editor>
               <second_editor />
             </state>
@@ -114,6 +120,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,16 +138,10 @@
               <item name="yasee" type="462c0819:PsiDirectoryNode" />
               <item name="exp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yasee" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.panda_exp">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yasee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,26 +208,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_ReportFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for test_ReportFile.ReportFileTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="yasee" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_ReportFile.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_ReportFile.ReportFileTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests for test_ReportFile.ReportFileTest.test_getitem" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -261,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.panda_exp" />
+        <item itemvalue="Python tests.Unittests for test_ReportFile.ReportFileTest" />
         <item itemvalue="Python tests.Unittests for test_ReportFile.ReportFileTest.test_getitem" />
         <item itemvalue="Python tests.Unittests in test_ReportFile.py" />
-        <item itemvalue="Python.test_ReportFile" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +284,8 @@
       <workItem from="1561434497528" duration="130000" />
       <workItem from="1561434911704" duration="24000" />
       <workItem from="1561434961004" duration="185000" />
-      <workItem from="1561435549568" duration="253000" />
+      <workItem from="1561435549568" duration="583000" />
+      <workItem from="1561437721863" duration="118000" />
     </task>
     <task id="LOCAL-00001" summary="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library.">
       <created>1561421707897</created>
@@ -355,7 +350,35 @@
       <option name="project" value="LOCAL" />
       <updated>1561435750321</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="6-24 NL9&#10;&#10;Updated readme.md">
+      <created>1561435854975</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561435854975</updated>
+    </task>
+    <task id="LOCAL-00011" summary="6-24 NL10&#10;&#10;Updated readme.md">
+      <created>1561435909112</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561435909112</updated>
+    </task>
+    <task id="LOCAL-00012" summary="6-24 NL11&#10;&#10;Updated readme.md">
+      <created>1561435953477</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1561435953477</updated>
+    </task>
+    <task id="LOCAL-00013" summary="6-24 NL12&#10;&#10;Updated readme.md">
+      <created>1561436044291</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561436044291</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -391,13 +414,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8330000" />
+    <option name="totallyTimeSpent" value="8778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="39" width="1440" height="770" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20100144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20386267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -408,7 +430,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32890856" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32890856" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -473,7 +495,11 @@
     <MESSAGE value="6-24 NL6&#10;&#10;Tweaked ReportFile to support future timestamp Writing Center report files." />
     <MESSAGE value="6-24 NL7&#10;&#10;Updated readme.md" />
     <MESSAGE value="6-24 NL8&#10;&#10;Updated readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="6-24 NL8&#10;&#10;Updated readme.md" />
+    <MESSAGE value="6-24 NL9&#10;&#10;Updated readme.md" />
+    <MESSAGE value="6-24 NL10&#10;&#10;Updated readme.md" />
+    <MESSAGE value="6-24 NL11&#10;&#10;Updated readme.md" />
+    <MESSAGE value="6-24 NL12&#10;&#10;Updated readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="6-24 NL12&#10;&#10;Updated readme.md" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/util/_decorators.py">
@@ -512,12 +538,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="58" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReportFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
+          <folding>
+            <element signature="e#430#447#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_ReportFile.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -529,38 +588,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/documentation/Week 1 Progress Report.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
-          <folding>
-            <element signature="e#430#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReportFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="266">
-            <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
   </component>
 </project>
