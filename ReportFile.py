@@ -1,4 +1,5 @@
-""" Module for the ReportFile class """
+# Module for the ReportFile class
+
 import pandas
 
 class ReportFileError(Exception):
@@ -27,20 +28,24 @@ class ReportFile:
             inter_file.close()
 
 
-    def __getitem__(self, item):
+    def __getitem__(self, item) -> pandas.core.frame.DataFrame:
         return self.sheets[item]
 
-    def get_sheet_names(self):
-        return tuple(self.sheets.keys());
+    def get_sheet_names(self) -> tuple:
+        return tuple(self.sheets.keys())
 
-    def get_visitNotes(self, quarter: str):
+
+    def get_visitNotes(self, quarter: str) -> tuple:
         """Only applicable to UC Irvine Writing Center report files."""
 
         """Returns a tuple of visit notes, stripped of any other info."""
         if not self.is_wcreport:
             raise NotWCReport
 
-        return tuple(i for i in self.sheets[quarter]["VisitNotes"])
+        return self.extract_column(quarter, "VisitNotes")
+
+    def extract_column(self, sheet:str, column:str) -> tuple:
+        return tuple(i for i in self.sheets[sheet][column])
 
 
     #

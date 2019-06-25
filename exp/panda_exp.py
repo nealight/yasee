@@ -24,6 +24,10 @@ columns = file
 
 import ReportFile
 from collections import defaultdict
+from wordcloud import WordCloud
+from matplotlib import pyplot
+
+
 
 words_toStrip = {
     "nan", "to", "the", "and", "a", "of", "her", "we", "she", "for", "about", "him", "his", "want",
@@ -43,7 +47,7 @@ for entry in entries:
         if word.lower() not in words_toStrip:
             word_freq_dict[word] += 1
     for index in range(len(words) - 1):
-        phrase = words[index] + ' ' + words[index + 1]
+        phrase = words[index] + '_' + words[index + 1]
         phrase_freq_dict[phrase] += 1
 
 ranked_phrase_freq = sorted(phrase_freq_dict.items(), key=lambda x: -x[1])
@@ -51,3 +55,13 @@ ranked_word_freq = sorted(word_freq_dict.items(), key=lambda x: -x[1])
 
 print(ranked_phrase_freq)
 print(ranked_word_freq)
+
+text = '\n'.join(str(entry) for entry in entries if str(entry) not in words_toStrip)
+
+
+word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(text)
+pyplot.figure()
+pyplot.imshow(word_cloud, interpolation="bilinear")
+pyplot.axis("off")
+
+pyplot.savefig("word frequency.png")
