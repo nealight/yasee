@@ -1,4 +1,4 @@
-**yasee**
+yasee
 ---
 
 **A data visualizer tailored for analyzing data provided from the writing center 
@@ -23,4 +23,6 @@ Logistics / Timeline
 A 5-week project.
 
 
+License
+---
 **LICENSED UNDER MIT LICENSE**
