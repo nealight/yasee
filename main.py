@@ -5,7 +5,7 @@ class Console:
     def __call__(self, *args, **kwargs):
         while True:
             user_prompt = input().strip().lower()
-            if user_prompt == "seeya":
+            if user_prompt in frozenset(("seeya", "see you")):
                 break
 
             if user_prompt == "generate word cloud":

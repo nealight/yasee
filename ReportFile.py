@@ -44,8 +44,8 @@ class ReportFile:
 
         return self.extract_column(quarter, "VisitNotes")
 
-    def extract_column(self, sheet:str, column:str) -> tuple:
-        return tuple(i for i in self.sheets[sheet][column])
+    def extract_column(self, sheet:str, column:str) -> (str,):
+        return tuple(str(i).strip() for i in self.sheets[sheet][column])
 
 
     #
