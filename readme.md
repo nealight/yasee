@@ -6,7 +6,7 @@ in University of California, Irvine.
 
 People
 ---
-Main contributor: nealight
+Main contributor: Alan Xu
 
 Faculty Adviser: Professor Percival Guevarra
 
