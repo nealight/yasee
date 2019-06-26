@@ -7,7 +7,7 @@ from ReportFile import ReportFile
 
 class ReportFileTest(unittest.TestCase):
     def setUp(self):
-        self.report_file = ReportFile("../test_files/report.xlsx")
+        self.report_file = ReportFile("test/report.xlsx")
 
     def test_canInstantiate(self):
         pass
