@@ -20,7 +20,7 @@ class Console:
 
                 print("What would be the name of your cloud?")
                 output_path = input().strip()
-                word_cloud.store_wordcloud(output_path)
+                word_cloud.store(output_path)
 
 
 

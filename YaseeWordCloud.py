@@ -25,14 +25,7 @@ class YaseeWordCloud:
            self.text = self.text.replace(word, "")
 
 
-    def display_wordcloud(self) -> None:
-        word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(self.text)
-        pyplot.figure()
-        pyplot.imshow(word_cloud, interpolation="bilinear")
-        pyplot.axis("off")
-        pyplot.show()
-
-    def store_wordcloud(self,name:str) -> None:
+    def store(self, name:str) -> None:
         word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(self.text)
         pyplot.figure()
         pyplot.imshow(word_cloud, interpolation="bilinear")
