@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/configure_environment.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/python-3.7.3-amd64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Installation Guide.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,15 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReportFile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,19 +68,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dependencies.txt">
+        <entry file="file://$PROJECT_DIR$/documentation/Installation Guide.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="95">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configure_environment.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="190">
+                <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -111,11 +106,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" selection-start-column="7" selection-end-column="7" />
+            <state relative-caret-position="19">
+              <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -145,19 +149,20 @@
         <option value="$PROJECT_DIR$/exp/panda_exp.py" />
         <option value="$PROJECT_DIR$/WordCloud.py" />
         <option value="$PROJECT_DIR$/ReportFile.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/YaseeWordCloud.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/test_YaseeWordCloud.py" />
         <option value="$PROJECT_DIR$/test_ReportFile.py" />
         <option value="$PROJECT_DIR$/dependencies.txt" />
         <option value="$PROJECT_DIR$/configure_environment.bat" />
+        <option value="$PROJECT_DIR$/documentation/dependencies.txt" />
+        <option value="$PROJECT_DIR$/documentation/Installation Guide.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="112" />
-    <option name="y" value="98" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="786" />
   </component>
@@ -169,6 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,7 +200,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,7 +367,9 @@
       <workItem from="1561531613978" duration="6000" />
       <workItem from="1561531647341" duration="631000" />
       <workItem from="1561567534580" duration="4925000" />
-      <workItem from="1561573575512" duration="1244000" />
+      <workItem from="1561573575512" duration="1408000" />
+      <workItem from="1561581435552" duration="13000" />
+      <workItem from="1561581546389" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library.">
       <created>1561421707897</created>
@@ -518,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561574036654</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Beta 1.0.3&#10;&#10;- Added a batch file that will automate dependency configurations on Windows.&#10;- Updated the documentations accordingly.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
+      <created>1561575008945</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1561575008945</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -554,24 +568,23 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25232000" />
+    <option name="totallyTimeSpent" value="25409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="249" y="234" width="1440" height="786" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="786" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.2274678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.23319027" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3501441" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3501441" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3501441" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3501441" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -682,7 +695,9 @@
     <MESSAGE value="Beta 1.0.1&#10;&#10;- Added some unittests and some minor tweaks.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.2&#10;&#10;- Some minor tweaks.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a requirements.txt indicating our project dependencies.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Beta 1.0.3&#10;&#10;- Added a requirements.txt indicating our project dependencies.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a batch file that will automate dependency configurations on Windows.&#10;- Updated the documentations accordingly.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <MESSAGE value="Beta 1.0.4&#10;&#10;- Added a Python installer.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta 1.0.4&#10;&#10;- Added a Python installer.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/util/_decorators.py">
@@ -759,20 +774,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="190">
-            <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/test/wordfreq.png" />
+    <entry file="file://$PROJECT_DIR$/configure_environment.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="57">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -817,15 +823,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="76">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/wordfreq.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test_ReportFile.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -834,24 +837,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies.txt">
+    <entry file="file://$PROJECT_DIR$/documentation/Installation Guide.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configure_environment.bat">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="366">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
         </state>
       </provider>
     </entry>
