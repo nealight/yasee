@@ -15,8 +15,4 @@ Wait for the installation process, and click close when finished.
 
 Python Libraries: (Open up a terminal window, and issue the following commands)
 -------------------------------------------------------------------------------
-(Please drag your yasee folder into the terminal window after cd, you will
-see a folder path after cd)
-
-cd [Drag file here]
-pip install -r requirements.txt
+click and run configure_environment.bat
