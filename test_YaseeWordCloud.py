@@ -1,6 +1,5 @@
 
 import unittest
-import os
 from YaseeWordCloud import YaseeWordCloud
 
 class YaseeWordCloudTest(unittest.TestCase):
