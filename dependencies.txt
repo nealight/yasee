@@ -1,0 +1,21 @@
+The project requires the following dependencies to be installed.
+===============================================================================
+
+
+
+Python 3.7 (x64): https://www.python.org/downloads/windows/
+-------------------------------------------------------------------------------
+Install requirements:
+
+Download the "Windows x86-64 executable installer"
+
+At first page, tick "Add Python 3.7 to PATH", and select Install Now.
+Wait for the installation process, and click close when finished.
+
+
+Python Libraries: (Open up a terminal window, and issue the following commands)
+-------------------------------------------------------------------------------
+pip install pandas
+pip install wordcloud
+pip install xlrd
+pip install matplotlib
