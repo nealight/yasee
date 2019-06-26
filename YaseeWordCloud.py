@@ -13,6 +13,7 @@ class YaseeWordCloud:
             words_toStrip = set(words_toStrip)
             words_toStrip.add("nan")
 
+
         report_file =  ReportFile.ReportFile(path)
         entries = report_file.extract_column(sheet=sheet, column=column)
 
