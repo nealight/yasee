@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/documentation/Windows Quick Installation/python37x64.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Week 1 Progress Report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configure_environment.bat" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/Installation Guide.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +55,8 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documentation/Installation Guide.txt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
@@ -92,11 +94,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="7" selection-start-column="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -145,6 +156,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/documentation/Week 1 Progress Report.txt" />
+        <option value="$PROJECT_DIR$/Windows Quick Installation/Configure Windows Python Environment.bat" />
+        <option value="$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat" />
       </list>
     </option>
   </component>
@@ -161,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,12 +188,19 @@
             </path>
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yasee" type="462c0819:PsiDirectoryNode" />
+              <item name="documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="Windows Quick Installation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,12 +211,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/documentation" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documentation/Windows Quick Installation" />
+      <recent name="$PROJECT_DIR$/documentation" />
+      <recent name="$PROJECT_DIR$/Windows Quick Installation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -356,6 +377,12 @@
       <workItem from="1561581435552" duration="13000" />
       <workItem from="1561581546389" duration="426000" />
       <workItem from="1561582005885" duration="53000" />
+      <workItem from="1561582154956" duration="489000" />
+      <workItem from="1561582852451" duration="18000" />
+      <workItem from="1561583560021" duration="11000" />
+      <workItem from="1561583579065" duration="9000" />
+      <workItem from="1561583630035" duration="16000" />
+      <workItem from="1561583988132" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library.">
       <created>1561421707897</created>
@@ -539,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561582053987</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Beta 1.0.5&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
+      <created>1561582167005</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1561582167005</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -575,12 +609,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25888000" />
+    <option name="totallyTimeSpent" value="26474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="786" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.2360515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -704,7 +739,8 @@
     <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a requirements.txt indicating our project dependencies.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a batch file that will automate dependency configurations on Windows.&#10;- Updated the documentations accordingly.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.4&#10;&#10;- Added a Python installer.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Beta 1.0.4&#10;&#10;- Added a Python installer.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <MESSAGE value="Beta 1.0.5&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta 1.0.5&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/util/_decorators.py">
@@ -775,13 +811,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hi.png" />
     <entry file="file://$PROJECT_DIR$/test/wordfreq.png" />
-    <entry file="file://$PROJECT_DIR$/configure_environment.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReportFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
@@ -799,6 +828,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/documentation/Week 1 Progress Report.txt" />
     <entry file="file://$PROJECT_DIR$/test_YaseeWordCloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -820,13 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1881">
           <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documentation/Installation Guide.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -854,6 +877,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -861,17 +891,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documentation/Week 1 Progress Report.txt">
+    <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="95">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
