@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/documentation/Windows Quick Installation/python37x64.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/Week 1 Report" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configure_environment.bat" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Installation Guide.txt" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,52 +16,13 @@
     <SUITE FILE_PATH="coverage/yasee$Unittests_in_test_ReportFile_py.coverage" NAME="Unittests in test_ReportFile.py Coverage Results" MODIFIED="1561421389633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1561571857212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$test_YaseeWordCloud.coverage" NAME="test_YaseeWordCloud Coverage Results" MODIFIED="1561573081894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$Unittests_in_test_YaseeWordCloud_py.coverage" NAME="Unittests in test_YaseeWordCloud.py Coverage Results" MODIFIED="1561573682023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_ReportFile_ReportFileTest.coverage" NAME="Unittests for test_ReportFile.ReportFileTest Coverage Results" MODIFIED="1561573694180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$Unittests_in_test_YaseeWordCloud_py.coverage" NAME="Unittests in test_YaseeWordCloud.py Coverage Results" MODIFIED="1561689473959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_ReportFile_ReportFileTest.coverage" NAME="Unittests for test_ReportFile.ReportFileTest Coverage Results" MODIFIED="1561689459929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$test_ReportFile.coverage" NAME="test_ReportFile Coverage Results" MODIFIED="1561420754665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$panda_exp.coverage" NAME="panda_exp Coverage Results" MODIFIED="1561486242957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exp" />
+    <SUITE FILE_PATH="coverage/yasee$panda_exp.coverage" NAME="panda_exp Coverage Results" MODIFIED="1561740553624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exp" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_YaseeWordCloud.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../Archive/ICS 32/Projects/Project 1/project1 alternate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3762">
-              <caret line="198" column="7" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
-              <folding>
-                <element signature="e#10#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm_matplotlib_backend/backend_interagg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1881">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -81,6 +40,35 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/wordfreq.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="e#430#447#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +109,11 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/documentation/Week 1 Report">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -158,6 +151,8 @@
         <option value="$PROJECT_DIR$/documentation/Week 1 Progress Report.txt" />
         <option value="$PROJECT_DIR$/Windows Quick Installation/Configure Windows Python Environment.bat" />
         <option value="$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat" />
+        <option value="$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt" />
+        <option value="$PROJECT_DIR$/documentation/Week 1 Report" />
       </list>
     </option>
   </component>
@@ -189,8 +184,12 @@
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
               <item name="yasee" type="462c0819:PsiDirectoryNode" />
-              <item name="documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="Windows Quick Installation" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yasee" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
@@ -233,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_ReportFile.ReportFileTest">
+  <component name="RunManager" selected="Python.panda_exp">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yasee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -332,11 +331,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_ReportFile.ReportFileTest" />
+        <item itemvalue="Python.panda_exp" />
         <item itemvalue="Python tests.Unittests in test_YaseeWordCloud.py" />
+        <item itemvalue="Python tests.Unittests for test_ReportFile.ReportFileTest" />
         <item itemvalue="Python.test_YaseeWordCloud" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.panda_exp" />
       </list>
     </recent_temporary>
   </component>
@@ -383,6 +382,11 @@
       <workItem from="1561583579065" duration="9000" />
       <workItem from="1561583630035" duration="16000" />
       <workItem from="1561583988132" duration="43000" />
+      <workItem from="1561584156287" duration="159000" />
+      <workItem from="1561689426158" duration="446000" />
+      <workItem from="1561740371153" duration="23000" />
+      <workItem from="1561740454617" duration="381000" />
+      <workItem from="1561741625673" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library.">
       <created>1561421707897</created>
@@ -573,16 +577,17 @@
       <option name="project" value="LOCAL" />
       <updated>1561582167005</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Beta 1.0.6&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
+      <created>1561584359035</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1561584359035</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_YaseeWordCloud_py - 2019.06.26 at 11h 18m 12s.xml">
-      <configuration name="Unittests in test_YaseeWordCloud.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_YaseeWordCloud_py - 2019.06.26 at 11h 18m 43s.xml">
-      <configuration name="Unittests in test_YaseeWordCloud.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_ReportFile_ReportFileTest - 2019.06.26 at 11h 20m 18s.xml">
       <configuration name="Unittests for test_ReportFile.ReportFileTest" configurationId="tests" />
     </history-entry>
@@ -607,15 +612,21 @@
     <history-entry file="Unittests_for_test_ReportFile_ReportFileTest - 2019.06.26 at 11h 28m 16s.xml">
       <configuration name="Unittests for test_ReportFile.ReportFileTest" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_ReportFile_ReportFileTest - 2019.06.27 at 19h 37m 42s.xml">
+      <configuration name="Unittests for test_ReportFile.ReportFileTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_YaseeWordCloud_py - 2019.06.27 at 19h 37m 55s.xml">
+      <configuration name="Unittests in test_YaseeWordCloud.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26474000" />
+    <option name="totallyTimeSpent" value="27542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="786" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="786" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -626,7 +637,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3501441" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.27377522" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -634,7 +645,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.18884121" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.18884121" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
@@ -715,7 +726,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library." />
     <MESSAGE value="6-24 NL1&#10;&#10;Can now output visit notes and rank their according to their frequencies (ranking now implemented in exp/panda_exp)." />
     <MESSAGE value="6-24 NL2&#10;&#10;Added a sample WCReport file under the newly created documentation folder." />
     <MESSAGE value="6-24 NL3&#10;&#10;Added further documentation." />
@@ -740,7 +750,8 @@
     <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a batch file that will automate dependency configurations on Windows.&#10;- Updated the documentations accordingly.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.4&#10;&#10;- Added a Python installer.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.5&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Beta 1.0.5&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <MESSAGE value="Beta 1.0.6&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta 1.0.6&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/util/_decorators.py">
@@ -791,16 +802,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/word frequency.png" />
     <entry file="file://$PROJECT_DIR$/exp/word frequency.png" />
-    <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="e#430#447#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hii.png" />
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
@@ -810,21 +811,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hi.png" />
-    <entry file="file://$PROJECT_DIR$/test/wordfreq.png" />
     <entry file="file://$PROJECT_DIR$/ReportFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -838,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../Archive/ICS 32/Projects/Project 1/project1 alternate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3762">
+        <state relative-caret-position="3724">
           <caret line="198" column="7" selection-start-line="198" selection-start-column="7" selection-end-line="198" selection-end-column="7" />
           <folding>
             <element signature="e#10#34#0" expanded="true" />
@@ -853,13 +843,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="190">
-            <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -867,6 +854,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/wordfreq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#430#447#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -884,13 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Configure Windows Python Environment.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -898,12 +891,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt">
+    <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="134">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documentation/Week 1 Report">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
