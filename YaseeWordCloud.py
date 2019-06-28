@@ -2,13 +2,12 @@ import ReportFile
 from wordcloud import WordCloud
 from matplotlib import pyplot
 from YaseeStopWords import YaseeStopWords
+from YaseeStopWords import UCIWC_DEFAULTSTOPWORDS
 import re
 
 class YaseeWordCloud:
     #static variable
-    DEFAULT_YSW = YaseeStopWords(stopwords=frozenset(("nan", "student", "wanted", "talked", "discussed",
-                                                      "want", "talk", "discussed", "paper", "write",
-                                                      "wrote", "writing", "will", "would")), replace=True)
+    DEFAULT_YSW = YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True)
 
 
     def __init__(self, path:str, sheet:str, column:str, stopwords:YaseeStopWords=None):

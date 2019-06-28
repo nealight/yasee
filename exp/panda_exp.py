@@ -27,8 +27,10 @@ from collections import defaultdict
 from wordcloud import WordCloud
 from matplotlib import pyplot
 import numpy
+from YaseeStopWords import YaseeStopWords
 
 
+ysw = YaseeStopWords()
 
 words_toStrip = {
     "nan", "to", "the", "and", "a", "of", "her", "we", "she", "for", "about", "him", "his", "want",
@@ -45,7 +47,7 @@ word_freq_dict = defaultdict(int)
 for entry in entries:
     words = str(entry).split()
     for word in words:
-        if word.lower() not in words_toStrip:
+        if word.lower() not in ysw:
             word_freq_dict[word] += 1
     for index in range(len(words) - 1):
         phrase = words[index] + '_' + words[index + 1]
