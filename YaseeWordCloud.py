@@ -5,9 +5,12 @@ from YaseeStopWords import YaseeStopWords
 import re
 
 class YaseeWordCloud:
+    #static variable
     DEFAULT_YSW = YaseeStopWords(stopwords=frozenset(("nan", "student", "wanted", "talked", "discussed",
                                                       "want", "talk", "discussed", "paper", "write",
                                                       "wrote", "writing", "will", "would")), replace=True)
+
+
     def __init__(self, path:str, sheet:str, column:str, stopwords:YaseeStopWords=None):
 
         if stopwords == None:

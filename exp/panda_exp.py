@@ -26,6 +26,7 @@ import ReportFile
 from collections import defaultdict
 from wordcloud import WordCloud
 from matplotlib import pyplot
+import numpy
 
 
 
@@ -36,8 +37,8 @@ words_toStrip = {
     "this", "how", "that", "was", "he", "could", "them"
 }
 
-report_file = ReportFile.ReportFile("../../reports/report.xlsx")
-entries = report_file.get_visitNotes(report_file.get_sheet_names()[0])
+report_file = ReportFile.ReportFile("../test/report.xlsx")
+entries = report_file.extract_column("WQ19", "VisitNotes")
 
 phrase_freq_dict = defaultdict(int)
 word_freq_dict = defaultdict(int)
@@ -58,10 +59,25 @@ print(ranked_word_freq)
 
 text = '\n'.join(str(entry) for entry in entries if str(entry) not in words_toStrip)
 
-
+"""
 word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(text)
 pyplot.figure()
 pyplot.imshow(word_cloud, interpolation="bilinear")
 pyplot.axis("off")
 
 pyplot.savefig("word frequency.png")
+"""
+
+TOP_X = 20
+widths = [len(word) for word, freq in ranked_word_freq[:TOP_X]]
+indexes = [widths[0],]
+for i in range(1, len(widths)):
+    indexes.append(indexes[i-1] + widths[i-1] * 0.5 + widths[i] * 0.5)
+print(indexes)
+
+pyplot.figure(figsize=(indexes[-1] * 0.1, 5))
+pyplot.bar(indexes, [x[1] for x in ranked_word_freq[:TOP_X]], 2)
+pyplot.xticks(indexes, [x[0] for x in ranked_word_freq[:TOP_X]])
+pyplot.xlabel('Frequent words', fontweight='bold', color = 'orange', fontsize='15', horizontalalignment='center')
+
+pyplot.show()

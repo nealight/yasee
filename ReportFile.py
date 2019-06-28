@@ -5,14 +5,8 @@ import pandas
 class ReportFileError(Exception):
     pass
 
-class NotWCReport(ReportFileError):
-    pass
-
 
 class ReportFile:
-    #
-    # public:
-    #
 
     def __init__(self, file_path: str, is_wcreport: bool=True):
         self.is_wcreport = is_wcreport
@@ -35,22 +29,8 @@ class ReportFile:
         return tuple(self.sheets.keys())
 
 
-    def get_visitNotes(self, quarter: str) -> tuple:
-        """Only applicable to UC Irvine Writing Center report files."""
-
-        """Returns a tuple of visit notes, stripped of any other info."""
-        if not self.is_wcreport:
-            raise NotWCReport
-
-        return self.extract_column(quarter, "VisitNotes")
-
     def extract_column(self, sheet:str, column:str) -> (str,):
         return tuple(str(i).strip() for i in self.sheets[sheet][column])
-
-
-    #
-    # private:
-    #
 
 
 
