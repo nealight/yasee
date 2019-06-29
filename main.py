@@ -17,18 +17,22 @@ def init_analysis_class(analysis_class:type) -> "type()":
 class Console():
     def __call__(self, *args, **kwargs):
         while True:
+            print("Hi! You have the following options\n"
+                  "a) word cloud\n"
+                  "b) word freq chart\n"
+                  "q) quit")
             user_prompt = input().strip().lower()
-            if (user_prompt in frozenset(("seeya", "quit", "see you"))):
+            if (user_prompt in ("seeya", "see you", "quit", "q")):
                 break
 
-            if (user_prompt == "word cloud"):
+            if (user_prompt in ("a", "word cloud")):
                 word_cloud:YaseeWordCloud = init_analysis_class(YaseeWordCloud)
 
                 print("What would be the name of your analysis file?")
                 output_path = input().strip()
                 word_cloud.store(output_path)
 
-            if (user_prompt == "word freq chart"):
+            if (user_prompt in ("b", "word freq chart")):
                 word_freq_chart:YaseeFreqCharts = init_analysis_class(YaseeFreqCharts)
 
                 print("What would be the name of your analysis file?")
