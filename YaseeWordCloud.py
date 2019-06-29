@@ -2,7 +2,7 @@ import ReportFile
 from wordcloud import WordCloud
 from matplotlib import pyplot
 from YaseeStopWords import YaseeStopWords
-from YaseeStopWords import UCIWC_DEFAULTSTOPWORDS
+from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
 import re
 
 class YaseeWordCloud:

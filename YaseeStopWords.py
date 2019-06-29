@@ -1,25 +1,20 @@
 from wordcloud import STOPWORDS
+from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
 
-UCIWC_DEFAULTSTOPWORDS = {"nan", "student", "wanted", "talked", "discussed",
-                          "want", "talk", "discussed", "paper", "write",
-                          "wrote", "writing", "will", "would", "make",
-                          "made"}
 
 
 class YaseeStopWords():
     DEFAULT_STOPWORDS = STOPWORDS.union(UCIWC_DEFAULTSTOPWORDS)
 
-
-
     def __init__(self, stopwords:frozenset=None, replace:bool=False):
         if (stopwords == None):
-            self.stopwords = YaseeStopWords.DEFAULT_STOPWORDS
+            self.stopwords = set(YaseeStopWords.DEFAULT_STOPWORDS)
         else:
             if replace:
                 self.stopwords = set(stopwords.__iter__())
             else:
 
-                self.stopwords = YaseeStopWords.DEFAULT_STOPWORDS
+                self.stopwords = set(YaseeStopWords.DEFAULT_STOPWORDS)
                 for x in stopwords:
                     self.stopwords.add(x)
 

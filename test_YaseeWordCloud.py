@@ -7,6 +7,6 @@ class YaseeWordCloudTest(unittest.TestCase):
         self.yasee_word_cloud = YaseeWordCloud("test/report.xlsx", "FQ18", "VisitNotes")
 
     def test_store(self):
-        self.yasee_word_cloud.store("test/wordfreq.png")
-        self.assertTrue(os.path.exists("test/wordfreq.png"))
+        self.yasee_word_cloud.store("test/wordcloud.png")
+        self.assertTrue(os.path.exists("test/wordcloud.png"))
 
