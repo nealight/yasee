@@ -30,23 +30,27 @@ class YaseeFreqCharts():
         self.ysw.add_stopwords(additional_words)
 
 
-    def storeWordFreq(self, name:str, top_X:int=10) -> None:
-        ranked_word_freq = calcWordFreq(self.entries, self.ysw)
-        xAxis_widths = [len(word) for word, freq in ranked_word_freq[:top_X]]
+    def storeWordFreq(self, file_name:str, top_X:int=10) -> None:
+        ranked_word_freq = calcWordFreq(self.entries, self.ysw)[:top_X]
+        YaseeFreqCharts.storeChart(file_name=file_name,
+                                   chart_name="Frequent Words",
+                                   ranked_freq=ranked_word_freq)
+
+
+    @staticmethod
+    def storeChart(file_name:str, chart_name:str, ranked_freq: [tuple, ...]) -> None:
+        xAxis_widths = [len(word) for word, freq in ranked_freq]
         indexes = [xAxis_widths[0], ]
         for i in range(1, len(xAxis_widths)):
             indexes.append(indexes[i - 1] + xAxis_widths[i - 1] * 0.5 + xAxis_widths[i] * 0.5)
 
-        canvas_width:int = indexes[-1] * 0.2
-        canvas_length:int = canvas_width
+        canvas_width: int = indexes[-1] * 0.2
+        canvas_length: int = canvas_width
 
         pyplot.figure(figsize=(canvas_width, canvas_length))
-        pyplot.bar(indexes, [x[1] for x in ranked_word_freq[:top_X]], 2)
-        pyplot.xticks(indexes, [x[0] for x in ranked_word_freq[:top_X]])
-        pyplot.xlabel('Frequent Words', fontweight='bold', color='orange', fontsize='15', horizontalalignment='center')
+        pyplot.bar(indexes, [x[1] for x in ranked_freq], 2)
+        pyplot.xticks(indexes, [x[0] for x in ranked_freq])
+        pyplot.xlabel(chart_name, fontweight='bold', color='orange', fontsize='15', horizontalalignment='center')
 
-        pyplot.savefig(name)
-
-
-
+        pyplot.savefig(file_name)
 
