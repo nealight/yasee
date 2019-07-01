@@ -4,19 +4,17 @@ import os
 
 class YaseeFreqChartsTest(unittest.TestCase):
     def setUp(self):
-        self.yfc = YaseeFreqCharts("test/report.xlsx", "FQ18", "VisitNotes")
+        self.yfc = YaseeFreqCharts("test/report.xlsx")
 
     def test_storeWordFreq(self):
-        self.yfc = YaseeFreqCharts("test/report.xlsx", "FQ18", "VisitNotes")
-        self.yfc.storeWordFreq("test/wordfreqchart.png")
+        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqchart.png")
         self.assertTrue(os.path.exists("test/wordfreqchart.png"))
 
     def test_storeWordFreqTop20(self):
-        self.yfc = YaseeFreqCharts("test/report.xlsx", "FQ18", "VisitNotes")
-        self.yfc.storeWordFreq("test/wordfreqchart top20.png", 20)
+        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqchart top20.png", 20)
         self.assertTrue(os.path.exists("test/wordfreqchart top20.png"))
 
     def test_addStopWords(self):
         self.yfc.addStopWords("word")
-        self.yfc.storeWordFreq("test/wordfreqcharexcluding'word'.png")
+        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqcharexcluding'word'.png")
         self.assertTrue(os.path.exists("test/wordfreqcharexcluding'word'.png"))

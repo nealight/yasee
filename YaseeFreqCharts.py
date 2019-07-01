@@ -1,37 +1,25 @@
-from typing import Tuple
-
 from YaseeStopWords import YaseeStopWords
 from ReportFile import ReportFile
 from collections import defaultdict
 from matplotlib import pyplot
 
 
-def calcWordFreq(entries: Tuple[str, ...], ysw:YaseeStopWords) -> [tuple, ...]:
-    word_freq_dict = defaultdict(int)
-    for entry in entries:
-        words = str(entry).split()
-        for word in words:
-            if word.lower() not in ysw:
-                word_freq_dict[word] += 1
-    ranked_word_freq = sorted(word_freq_dict.items(), key=lambda x: -x[1])
-    return ranked_word_freq
-
 class YaseeFreqCharts():
-    def __init__(self, path: str, sheet: str, column: str, stopwords: YaseeStopWords = None):
+    def __init__(self, path: str, stopwords: YaseeStopWords = None):
         if stopwords == None:
             self.ysw = YaseeStopWords()
         else:
             self.ysw = stopwords
 
-        report_file = ReportFile(path)
-        self.entries = report_file.extract_column(sheet=sheet, column=column)
+        self.report_file = ReportFile(path)
 
     def addStopWords(self, additional_words: str or iter):
         self.ysw.add_stopwords(additional_words)
 
 
-    def storeWordFreq(self, file_name:str, top_X:int=10) -> None:
-        ranked_word_freq = calcWordFreq(self.entries, self.ysw)[:top_X]
+    def storeWordFreq(self, sheet_name:str, column_name:str, file_name:str, top_X:int=10) -> None:
+        entries = self.report_file.extractColumn(sheet=sheet_name, column=column_name)
+        ranked_word_freq = YaseeFreqCharts.calcWordFreq(entries, self.ysw)[:top_X]
         YaseeFreqCharts.storeChart(file_name=file_name,
                                    chart_name="Frequent Words",
                                    ranked_freq=ranked_word_freq)
@@ -54,3 +42,18 @@ class YaseeFreqCharts():
 
         pyplot.savefig(file_name)
 
+
+    @staticmethod
+    def calcWordFreq(entries: (str, ...), ysw: YaseeStopWords) -> [tuple, ...]:
+        word_freq_dict = defaultdict(int)
+        for entry in entries:
+            words = str(entry).split()
+            for word in words:
+                if word.lower() not in ysw:
+                    word_freq_dict[word] += 1
+        ranked_word_freq = sorted(word_freq_dict.items(), key=lambda x: -x[1])
+        return ranked_word_freq
+
+    @staticmethod
+    def calcRelatedWordFreq():
+        pass

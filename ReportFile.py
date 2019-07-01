@@ -1,16 +1,14 @@
 # Module for the ReportFile class
 
 import pandas
+from typing import Sequence
 
 class ReportFileError(Exception):
     pass
 
 
 class ReportFile:
-
-    def __init__(self, file_path: str, is_wcreport: bool=True):
-        self.is_wcreport = is_wcreport
-
+    def __init__(self, file_path: str):
         inter_file = pandas.ExcelFile(file_path)
 
         try:
@@ -22,15 +20,16 @@ class ReportFile:
             inter_file.close()
 
 
-    def __getitem__(self, item) -> pandas.core.frame.DataFrame:
+    def __getitem__(self, item) -> pandas.DataFrame:
         return self.sheets[item]
 
-    def get_sheet_names(self) -> tuple:
+    def getSheetNames(self) -> tuple:
         return tuple(self.sheets.keys())
 
-
-    def extract_column(self, sheet:str, column:str) -> (str,):
+    def extractColumn(self, sheet:str, column:str) -> (str,):
         return tuple(str(i).strip() for i in self.sheets[sheet][column])
 
+    def extractRelatedColumns(self, sheet:str, *columns:str) -> ((str, ...), ...):
+        return tuple(zip(*(self.extractColumn(sheet, column) for column in columns)))
 
 

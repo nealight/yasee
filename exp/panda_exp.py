@@ -40,7 +40,7 @@ words_toStrip = {
 }
 
 report_file = ReportFile.ReportFile("../test/report.xlsx")
-entries = report_file.extract_column("WQ19", "VisitNotes")
+entries = report_file.extractColumn("WQ19", "VisitNotes")
 
 phrase_freq_dict = defaultdict(int)
 word_freq_dict = defaultdict(int)

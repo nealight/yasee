@@ -6,27 +6,27 @@ from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
 import re
 
 class YaseeWordCloud:
-    #static variable
-    DEFAULT_YSW = YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True)
 
-
-    def __init__(self, path:str, sheet:str, column:str, stopwords:YaseeStopWords=None):
+    def __init__(self, path:str, stopwords:YaseeStopWords=None):
 
         if stopwords == None:
-            stopwords = YaseeWordCloud.DEFAULT_YSW
+            self.stopwords = YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True)
+        else:
+            self.stopwords = stopwords
+
+        self.report_file =  ReportFile.ReportFile(path)
 
 
-        report_file =  ReportFile.ReportFile(path)
-        entries = report_file.extract_column(sheet=sheet, column=column)
 
-        self.text = '\n'.join(entry.lower() for entry in entries).lower()
+    def store(self, sheet:str, column:str, name:str) -> None:
+        entries = self.report_file.extractColumn(sheet=sheet, column=column)
 
-        for word in stopwords:
-           self.text = self.text.replace(word, "")
+        text = '\n'.join(entry.lower() for entry in entries).lower()
 
+        for word in self.stopwords:
+            text = text.replace(word, "")
 
-    def store(self, name:str) -> None:
-        word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(self.text)
+        word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(text)
         pyplot.figure()
         pyplot.imshow(word_cloud, interpolation="bilinear")
         pyplot.axis("off")
