@@ -1,20 +1,18 @@
-from YaseeReportFile import YaseeReportFile
 from wordcloud import WordCloud
 from matplotlib import pyplot
 from YaseeStopWords import YaseeStopWords
 from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
+from YaseeAnalysisClass import YaseeAnalysisClass
 import re
 
-class YaseeWordCloud:
-
+class YaseeWordCloud(YaseeAnalysisClass):
     def __init__(self, path:str, stopwords:YaseeStopWords=None):
 
         if stopwords == None:
-            self.stopwords = YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True)
+            YaseeAnalysisClass.__init__(self, path, YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True))
         else:
-            self.stopwords = stopwords
+            YaseeAnalysisClass.__init__(self, path, stopwords)
 
-        self.report_file =  YaseeReportFile(path)
 
 
 
@@ -23,7 +21,7 @@ class YaseeWordCloud:
 
         text = '\n'.join(entry.lower() for entry in entries).lower()
 
-        for word in self.stopwords:
+        for word in self.ysw:
             text = text.replace(word, "")
 
         word_cloud = WordCloud(max_font_size=50, background_color="white", max_words=50).generate(text)

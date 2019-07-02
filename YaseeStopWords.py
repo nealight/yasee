@@ -17,10 +17,10 @@ class YaseeStopWords():
                 for x in stopwords:
                     self.stopwords.add(x)
 
-    def get_stopwords(self) -> frozenset:
+    def getStopwords(self) -> frozenset:
         return frozenset(self.stopwords.__iter__())
 
-    def add_stopwords(self, item:str or iter=None):
+    def addStopwords(self, item: str or iter=None):
         if item == None:
             return
         elif type(item) == str:

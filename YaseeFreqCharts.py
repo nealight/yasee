@@ -1,22 +1,10 @@
 from YaseeStopWords import YaseeStopWords
-from YaseeReportFile import YaseeReportFile
+from YaseeAnalysisClass import YaseeAnalysisClass
 from collections import defaultdict
 from matplotlib import pyplot
 
 
-class YaseeFreqCharts():
-    def __init__(self, path: str, stopwords: YaseeStopWords = None):
-        if stopwords == None:
-            self.ysw = YaseeStopWords()
-        else:
-            self.ysw = stopwords
-
-        self.report_file = YaseeReportFile(path)
-
-    def addStopWords(self, additional_words: str or iter):
-        self.ysw.add_stopwords(additional_words)
-
-
+class YaseeFreqCharts(YaseeAnalysisClass):
     def storeWordFreq(self, sheet_name:str, column_name:str, file_name:str, top_X:int=10) -> None:
         entries = self.report_file.extractColumn(sheet=sheet_name, column=column_name)
         ranked_word_freq = YaseeFreqCharts.calcWordFreq(entries, self.ysw)[:top_X]

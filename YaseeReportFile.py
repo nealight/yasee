@@ -1,9 +1,8 @@
 # Module for the YaseeReportFile class
 
 import pandas
-from typing import Sequence
 
-class ReportFileError(Exception):
+class YaseeReportFileError(Exception):
     pass
 
 
