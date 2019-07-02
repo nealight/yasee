@@ -3,18 +3,64 @@ from YaseeAnalysisClass import YaseeAnalysisClass
 from collections import defaultdict
 from matplotlib import pyplot
 
+class YaseeFreqChartsError(Exception):
+    pass
+
+class NoSearchResultsFound(YaseeFreqChartsError):
+    pass
+
 
 class YaseeFreqCharts(YaseeAnalysisClass):
-    def storeWordFreq(self, sheet_name:str, column_name:str, file_name:str, top_X:int=10) -> None:
+    def storeWordFreq(self, sheet_name: str, column_name: str, file_name: str, top_X: int = 10) -> None:
         entries = self.report_file.extractColumn(sheet=sheet_name, column=column_name)
         ranked_word_freq = YaseeFreqCharts.calcWordFreq(entries, self.ysw)[:top_X]
         YaseeFreqCharts.storeChart(file_name=file_name,
                                    chart_name="Frequent Words",
                                    ranked_freq=ranked_word_freq)
 
+    def storeRelatedWordFreq(self, sheet_name: str, identity_column: str, data_column: str, target_word: str,
+                             file_name: str, top_X: int = 5, is_word_root: bool = False) -> None:
+        correlation_data = self.report_file.extractRelatedColumns(sheet_name, identity_column,
+                                                                 data_column)
+        ranked_freq = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_word.lower(), is_word_root)[:top_X]
+        YaseeFreqCharts.storeChart(file_name, f"{target_word.upper()} Frequency in Relation to {identity_column}", ranked_freq)
+
+
 
     @staticmethod
-    def storeChart(file_name:str, chart_name:str, ranked_freq: [tuple, ...]) -> None:
+    def calcRelatedWordFreq(correlation_data:((str, ...), ...), target_word:str, is_word_root: bool = False) \
+        -> [tuple, ...]:
+
+        word_freq_dict = defaultdict(int)
+
+        if is_word_root:
+            for identity, entry in correlation_data:
+                if identity != "nan":
+                    words = str(entry).split()
+                    for word in words:
+                        if word.lower()[:len(target_word)] == target_word:
+                            word_freq_dict[identity] += 1
+
+        else:
+            for identity, entry in correlation_data:
+                if identity != "nan":
+                    words = str(entry).split()
+                    for word in words:
+                        if word.lower() == target_word:
+                            word_freq_dict[identity] += 1
+
+
+
+        freq_dict = sorted(word_freq_dict.items(), key=lambda x: -x[1])
+        if len(freq_dict) == 0:
+            raise NoSearchResultsFound
+
+        return freq_dict
+
+
+
+    @staticmethod
+    def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple, ...]) -> None:
         xAxis_widths = [len(word) for word, freq in ranked_freq]
         indexes = [xAxis_widths[0], ]
         for i in range(1, len(xAxis_widths)):
@@ -30,7 +76,6 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
         pyplot.savefig(file_name)
 
-
     @staticmethod
     def calcWordFreq(entries: (str, ...), ysw: YaseeStopWords) -> [tuple, ...]:
         word_freq_dict = defaultdict(int)
@@ -39,9 +84,4 @@ class YaseeFreqCharts(YaseeAnalysisClass):
             for word in words:
                 if word.lower() not in ysw:
                     word_freq_dict[word] += 1
-        ranked_word_freq = sorted(word_freq_dict.items(), key=lambda x: -x[1])
-        return ranked_word_freq
-
-    @staticmethod
-    def calcRelatedWordFreq():
-        pass
+        return sorted(word_freq_dict.items(), key=lambda x: -x[1])

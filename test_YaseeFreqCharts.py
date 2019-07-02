@@ -1,5 +1,5 @@
 import unittest
-from YaseeFreqCharts import YaseeFreqCharts
+from YaseeFreqCharts import *
 import os
 
 class YaseeFreqChartsTest(unittest.TestCase):
@@ -18,3 +18,18 @@ class YaseeFreqChartsTest(unittest.TestCase):
         self.yfc.addStopWords("word")
         self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqcharexcluding'word'.png")
         self.assertTrue(os.path.exists("test/wordfreqcharexcluding'word'.png"))
+
+    def test_storeRelatedWordFreq(self):
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "research",
+                                      "test/RelatedWordFreq 'research'.png")
+        self.assertTrue(os.path.exists("test/RelatedWordFreq 'research'.png"))
+
+    def test_storeRelatedWordRootFreq(self):
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "re",
+                                      "test/RelatedWordRootFreq 're'.png", is_word_root=True)
+        self.assertTrue(os.path.exists("test/RelatedWordRootFreq 're'.png"))
+
+
+    def test_NoSearchResultsFound(self):
+        self.assertRaises(NoSearchResultsFound, self.yfc.storeRelatedWordFreq, "SQ19", "MajorID1", "VisitNotes", "pre",
+                                      "test/RelatedWordFreq 'pre'.png")
