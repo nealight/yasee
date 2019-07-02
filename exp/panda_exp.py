@@ -22,7 +22,7 @@ file = intermediate.parse(intermediate.sheet_names[0])
 columns = file
 """
 
-import ReportFile
+import YaseeReportFile
 from collections import defaultdict
 from wordcloud import WordCloud
 from matplotlib import pyplot
@@ -39,7 +39,7 @@ words_toStrip = {
     "this", "how", "that", "was", "he", "could", "them"
 }
 
-report_file = ReportFile.YaseeReportFile("../test/report.xlsx")
+report_file = YaseeReportFile.YaseeReportFile("../test/report.xlsx")
 entries = report_file.extractColumn("WQ19", "VisitNotes")
 
 phrase_freq_dict = defaultdict(int)
