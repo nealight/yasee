@@ -79,7 +79,7 @@ class Console():
                     freq_chart.storeRelatedWordFreq(target_sheet, identity_column, data_column, target_word,
                                                 output_path, top_X, is_word_root)
                 except NoSearchResultsFound:
-                    print(f"No search result for {target_word + '*' if is_word_root else ''}")
+                    print(f"No search result for {target_word + ('*' if is_word_root else '')}")
 
             else:
                 print("That is not a valid command.")

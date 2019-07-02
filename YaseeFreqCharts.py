@@ -23,7 +23,8 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         correlation_data = self.report_file.extractRelatedColumns(sheet_name, identity_column,
                                                                  data_column)
         ranked_freq = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_word.lower(), is_word_root)[:top_X]
-        YaseeFreqCharts.storeChart(file_name, f"{target_word.upper()} Frequency in Relation to {identity_column}", ranked_freq)
+        YaseeFreqCharts.storeChart(file_name, f"{target_word.upper() + ('*' if is_word_root else '')} "
+        f"Frequency in Relation to {identity_column}", ranked_freq)
 
 
 
@@ -50,17 +51,15 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                             word_freq_dict[identity] += 1
 
 
-
-        freq_dict = sorted(word_freq_dict.items(), key=lambda x: -x[1])
-        if len(freq_dict) == 0:
-            raise NoSearchResultsFound
-
-        return freq_dict
+        return sorted(word_freq_dict.items(), key=lambda x: -x[1])
 
 
 
     @staticmethod
     def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple, ...]) -> None:
+        if len(ranked_freq) == 0:
+            raise NoSearchResultsFound
+
         xAxis_widths = [len(word) for word, freq in ranked_freq]
         indexes = [xAxis_widths[0], ]
         for i in range(1, len(xAxis_widths)):
