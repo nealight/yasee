@@ -39,7 +39,7 @@ words_toStrip = {
     "this", "how", "that", "was", "he", "could", "them"
 }
 
-report_file = ReportFile.ReportFile("../test/report.xlsx")
+report_file = ReportFile.YaseeReportFile("../test/report.xlsx")
 entries = report_file.extractColumn("WQ19", "VisitNotes")
 
 phrase_freq_dict = defaultdict(int)

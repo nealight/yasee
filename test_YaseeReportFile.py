@@ -1,12 +1,12 @@
 # UnitTest Module
 
 import unittest
-from ReportFile import ReportFile
+from YaseeReportFile import YaseeReportFile
 
 
-class ReportFileTest(unittest.TestCase):
+class YaseeReportFileTest(unittest.TestCase):
     def setUp(self):
-        self.report_file = ReportFile("test/report.xlsx")
+        self.report_file = YaseeReportFile("test/report.xlsx")
 
     def test_canInstantiate(self):
         pass

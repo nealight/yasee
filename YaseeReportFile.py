@@ -1,4 +1,4 @@
-# Module for the ReportFile class
+# Module for the YaseeReportFile class
 
 import pandas
 from typing import Sequence
@@ -7,7 +7,7 @@ class ReportFileError(Exception):
     pass
 
 
-class ReportFile:
+class YaseeReportFile:
     def __init__(self, file_path: str):
         inter_file = pandas.ExcelFile(file_path)
 

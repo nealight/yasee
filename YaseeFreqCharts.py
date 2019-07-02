@@ -1,5 +1,5 @@
 from YaseeStopWords import YaseeStopWords
-from ReportFile import ReportFile
+from YaseeReportFile import YaseeReportFile
 from collections import defaultdict
 from matplotlib import pyplot
 
@@ -11,7 +11,7 @@ class YaseeFreqCharts():
         else:
             self.ysw = stopwords
 
-        self.report_file = ReportFile(path)
+        self.report_file = YaseeReportFile(path)
 
     def addStopWords(self, additional_words: str or iter):
         self.ysw.add_stopwords(additional_words)

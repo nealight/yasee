@@ -1,4 +1,4 @@
-import ReportFile
+from YaseeReportFile import YaseeReportFile
 from wordcloud import WordCloud
 from matplotlib import pyplot
 from YaseeStopWords import YaseeStopWords
@@ -14,7 +14,7 @@ class YaseeWordCloud:
         else:
             self.stopwords = stopwords
 
-        self.report_file =  ReportFile.ReportFile(path)
+        self.report_file =  YaseeReportFile(path)
 
 
 
