@@ -14,7 +14,7 @@ class Console():
             print("Hi! You have the following options\n"
                   "a) word cloud\n"
                   "b) word freq chart\n"
-                  "q) quit\n")
+                  "q) quit\n", end="")
             user_prompt = input().strip().lower()
             if (user_prompt in ("seeya", "see you", "quit", "q")):
                 break
