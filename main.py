@@ -1,3 +1,5 @@
+# Local Console
+
 from YaseeWordCloud import YaseeWordCloud
 from YaseeFreqCharts import YaseeFreqCharts
 from YaseeFreqCharts import NoSearchResultsFound

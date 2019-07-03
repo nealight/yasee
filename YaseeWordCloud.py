@@ -1,9 +1,10 @@
+# This class visualizes word frequency in terms of a word cloud.
+
 from wordcloud import WordCloud
 from matplotlib import pyplot
 from YaseeStopWords import YaseeStopWords
 from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
 from YaseeAnalysisClass import YaseeAnalysisClass
-import re
 
 class YaseeWordCloud(YaseeAnalysisClass):
     def __init__(self, path:str, stopwords:YaseeStopWords=None):

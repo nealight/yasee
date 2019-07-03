@@ -1,3 +1,5 @@
+# A base class for all classes that perform analysis and visualization.
+
 from YaseeStopWords import YaseeStopWords
 from YaseeReportFile import YaseeReportFile
 

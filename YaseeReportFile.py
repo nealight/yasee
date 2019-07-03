@@ -1,4 +1,5 @@
-# Module for the YaseeReportFile class
+# This class reads and manipulates Excel form statistical data using the
+# pandas library.
 
 import pandas
 

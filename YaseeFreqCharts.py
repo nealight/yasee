@@ -1,3 +1,5 @@
+# This class visualizes word frequency in terms of bar charts.
+
 from YaseeStopWords import YaseeStopWords
 from YaseeAnalysisClass import YaseeAnalysisClass
 from collections import defaultdict

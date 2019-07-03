@@ -1,3 +1,9 @@
+# This class provides a layer of conversion between Frozenset and Set.
+#
+# You can also specify whether to use the standard UC Irvine Writing
+# Center stop words.
+
+
 from wordcloud import STOPWORDS
 from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
 
