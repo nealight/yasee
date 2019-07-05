@@ -4,6 +4,8 @@ from YaseeStopWords import YaseeStopWords
 from YaseeAnalysisClass import YaseeAnalysisClass
 from collections import defaultdict
 from matplotlib import pyplot
+from typing import Callable
+import re
 
 class YaseeFreqChartsError(Exception):
     pass
@@ -12,7 +14,7 @@ class NoSearchResultsFound(YaseeFreqChartsError):
     pass
 
 
-def gen_verification(str_expr: str) -> "function":
+def gen_verification(str_expr: str) -> Callable:
     f = lambda x: True if x == str_expr else False
 
     if str_expr[-1] == '*':
@@ -46,15 +48,17 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
     @staticmethod
-    def calcRelatedWordFreq(correlation_data:((str, ...), ...), target_expr:str)  -> [tuple, ...]:
+    def calcRelatedWordFreq(correlation_data:((str)), target_expr:str)  -> [tuple]:
 
         word_freq_dict = defaultdict(int)
 
+        verification:Callable
 
-        if type(target_expr) == str:
+        if target_expr[:6] != "regex:":
             verification = gen_verification(target_expr)
         else:
-            verification = None
+            verification = re.compile(target_expr[6:]).match
+
 
         for identity, entry in correlation_data:
             if identity != "nan":
@@ -69,7 +73,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
     @staticmethod
-    def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple, ...]) -> None:
+    def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple]) -> None:
         if len(ranked_freq) == 0:
             raise NoSearchResultsFound
 
@@ -85,8 +89,8 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         pyplot.bar(indexes, [x[1] for x in ranked_freq], 2)
         pyplot.xticks(indexes, [x[0] for x in ranked_freq])
         pyplot.yticks(fontsize = canvas_length * 1)
-        pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length * 1.5, horizontalalignment='center')
-        pyplot.title(chart_name, fontweight='bold', color='orange', fontsize= canvas_width * 2,
+        pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length * 1.25, horizontalalignment='center')
+        pyplot.title(chart_name, fontweight='bold', color='orange', fontsize= canvas_width * 1.5,
                      horizontalalignment='center')
 
         for x_axis, y_axis in zip(indexes, (freq for x, freq in ranked_freq)):
@@ -98,7 +102,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         pyplot.savefig(file_name)
 
     @staticmethod
-    def calcWordFreq(entries: (str, ...), ysw: YaseeStopWords) -> [tuple, ...]:
+    def calcWordFreq(entries: (str, ...), ysw: YaseeStopWords) -> [tuple]:
         word_freq_dict = defaultdict(int)
         for entry in entries:
             words = str(entry).split()

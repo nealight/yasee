@@ -6,6 +6,10 @@ class YaseeFreqChartsTest(unittest.TestCase):
     def setUp(self):
         self.yfc = YaseeFreqCharts("test/report.xlsx")
 
+    def test_NoSearchResultsFound(self):
+        self.assertRaises(NoSearchResultsFound, self.yfc.storeRelatedWordFreq, "SQ19", "MajorID1", "VisitNotes", "pre",
+                                      "test/RelatedWordFreq 'pre'.png")
+
     def test_storeWordFreq(self):
         self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqchart.png")
         self.assertTrue(os.path.exists("test/wordfreqchart.png"))
@@ -34,7 +38,11 @@ class YaseeFreqChartsTest(unittest.TestCase):
                                       "test/RelatedWordSuffixtFreq 'ation'.png")
         self.assertTrue(os.path.exists("test/RelatedWordSuffixtFreq 'ation'.png"))
 
+    def test_storeRelatedRECase1(self):
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "regex:(\w){3}",
+                                      "test/RelatedRE regex:(\w){3}.png")
+        self.assertTrue(os.path.exists("test/RelatedRE regex:(\w){3}.png"))
 
-    def test_NoSearchResultsFound(self):
-        self.assertRaises(NoSearchResultsFound, self.yfc.storeRelatedWordFreq, "SQ19", "MajorID1", "VisitNotes", "pre",
-                                      "test/RelatedWordFreq 'pre'.png")
+    def test_storeRelatedRECase2(self):
+        self.assertRaises(NoSearchResultsFound, self.yfc.storeRelatedWordFreq, "FQ18", "MajorID1",
+                          "VisitNotes", "regex:(\w){20}", "test/RelatedRE regex:(\w){20}.png")
