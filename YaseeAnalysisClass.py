@@ -4,11 +4,13 @@ from YaseeStopWords import YaseeStopWords
 from YaseeReportFile import YaseeReportFile
 
 class YaseeAnalysisClass():
-    def __init__(self, path: str, stopwords: YaseeStopWords = None):
+    def __init__(self, path: str, stopwords: YaseeStopWords or frozenset = None):
         if stopwords == None:
             self.ysw = YaseeStopWords()
-        else:
+        elif type(stopwords) == YaseeStopWords:
             self.ysw = stopwords
+        elif type(stopwords) == frozenset:
+            self.ysw = YaseeStopWords(stopwords)
 
         self.report_file = YaseeReportFile(path)
 

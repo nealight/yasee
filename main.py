@@ -3,7 +3,6 @@
 from YaseeWordCloud import YaseeWordCloud
 from YaseeFreqCharts import YaseeFreqCharts
 from YaseeFreqCharts import NoSearchResultsFound
-from YaseeStopWords import YaseeStopWords
 from YaseeAnalysisClass import YaseeAnalysisClass
 
 
@@ -12,8 +11,7 @@ def init_analysis_class(analysis_class:type) -> "type()":
     target_file_path = input().strip()
 
     print("Enter any additional stopwords you want to implement.")
-    ysw = YaseeStopWords(frozenset(x for x in input().strip().split()))
-    return analysis_class(path=target_file_path, stopwords=ysw)
+    return analysis_class(path=target_file_path, stopwords=frozenset(x for x in input().strip().split()))
 
 
 class Console():

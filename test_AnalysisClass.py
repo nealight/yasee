@@ -8,3 +8,9 @@ class YaseeAnalysisClassTest(unittest.TestCase):
     def test_addStopWords(self):
         self.yac.addStopWords("word")
         self.assertIn("word", self.yac.getStopWords())
+
+    def test_FrozensetInit(self):
+        yac = YaseeAnalysisClass("test/report.xlsx", frozenset(("word", "essay")))
+        self.assertIn("word", yac.getStopWords())
+        self.assertIn("essay", yac.getStopWords())
+        self.assertNotIn("word", self.yac.getStopWords())

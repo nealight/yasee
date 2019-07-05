@@ -7,10 +7,13 @@ from UCIWC_DEFAULTSTOPWORDS import UCIWC_DEFAULTSTOPWORDS
 from YaseeAnalysisClass import YaseeAnalysisClass
 
 class YaseeWordCloud(YaseeAnalysisClass):
-    def __init__(self, path:str, stopwords:YaseeStopWords=None):
+    def __init__(self, path:str, stopwords:YaseeStopWords or frozenset=None):
 
         if stopwords == None:
             YaseeAnalysisClass.__init__(self, path, YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True))
+        elif type(stopwords) == frozenset:
+            YaseeAnalysisClass.__init__(self, path, YaseeStopWords(UCIWC_DEFAULTSTOPWORDS, True))
+            self.ysw.addStopwords(stopwords)
         else:
             YaseeAnalysisClass.__init__(self, path, stopwords)
 
