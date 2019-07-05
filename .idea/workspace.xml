@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-310">
+            <state relative-caret-position="247">
               <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -92,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="165">
-                <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <first_editor relative-caret-position="203">
+                <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -211,7 +209,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -426,13 +424,7 @@
       <workItem from="1562351172281" duration="45000" />
       <workItem from="1562351243521" duration="1759000" />
       <workItem from="1562358931382" duration="3458000" />
-    </task>
-    <task id="LOCAL-00007" summary="6-24 NL6&#10;&#10;Tweaked ReportFile to support future timestamp Writing Center report files.">
-      <created>1561435590544</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1561435590544</updated>
+      <workItem from="1562362467387" duration="55000" />
     </task>
     <task id="LOCAL-00008" summary="6-24 NL7&#10;&#10;Updated readme.md">
       <created>1561435690879</created>
@@ -770,7 +762,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562362413428</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Release 7-5&#10;&#10;- Adjusted chart visualization appearance.&#10;- Improved UI. &#10;&#10;&#10;Future direction:&#10;1. Implement &quot;SmartAnalysis&quot; of correlation.">
+      <created>1562362513787</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1562362513787</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -806,13 +805,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74653000" />
+    <option name="totallyTimeSpent" value="74708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="23" width="1440" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.2453505" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.24892704" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -823,7 +822,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5489914" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.5478261" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.4740634" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -1091,9 +1090,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/wordfreqcharexcluding'word'.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/wordfreqcharexcluding'word'.png" />
     <entry file="file://$PROJECT_DIR$/test_YaseeWordCloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1111,9 +1108,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/WordCloud.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WordCloud.png" />
     <entry file="file://$PROJECT_DIR$/test_YaseeStopWords.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1141,15 +1136,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OooO.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/f Relative.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/f Absolute.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/OooO.png" />
+    <entry file="file://$PROJECT_DIR$/f Relative.png" />
+    <entry file="file://$PROJECT_DIR$/f Absolute.png" />
     <entry file="file://$PROJECT_DIR$/YaseeAnalysisClass.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1192,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-310">
+        <state relative-caret-position="247">
           <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -1227,8 +1216,8 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="165">
-            <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <first_editor relative-caret-position="203">
+            <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           </first_editor>
           <second_editor />
         </state>
