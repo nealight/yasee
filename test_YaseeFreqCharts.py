@@ -28,6 +28,11 @@ class YaseeFreqChartsTest(unittest.TestCase):
                                       "test/RelatedWordFreq 'research'.png")
         self.assertTrue(os.path.exists("test/RelatedWordFreq 'research'.png"))
 
+    def test_storeRelatedWordRelativeFreq(self):
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "research",
+                                      "test/RelatedWordRelativeFreq 'research'.png", is_related_freq=True)
+        self.assertTrue(os.path.exists("test/RelatedWordRelativeFreq 'research'.png"))
+
     def test_storeRelatedWordRootFreq(self):
         self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "re*",
                                       "test/RelatedWordRootFreq 're'.png")
