@@ -81,7 +81,9 @@ class Console():
 
                 try:
                     analysis.storeRelatedWordFreq(target_sheet, identity_column, data_column, target_expression,
-                                                output_path, top_X, True)
+                                                output_path + " Relative", top_X, True)
+                    analysis.storeRelatedWordFreq(target_sheet, identity_column, data_column, target_expression,
+                                                  output_path + " Absolute", top_X)
                 except NoSearchResultsFound:
                     print(f"\nNo search result found for {target_expression}!\n")
 

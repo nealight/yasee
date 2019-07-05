@@ -103,8 +103,10 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         pyplot.title(chart_name, fontweight='bold', color='orange', fontsize=canvas_width * 1.5,
                      horizontalalignment='center')
 
+        f = lambda x, y: x - len(str(y)[:5]) * 0.5 + (0.3 if '.' in str(y) else 0)
+
         for x_axis, y_axis in zip(indexes, (freq for x, freq in ranked_freq)):
-            pyplot.text((lambda x, y: x - len(str(y)[:5]) * 0.5)(x_axis, y_axis),
+            pyplot.text(f(x_axis, y_axis),
                         y_axis, str(y_axis)[:5],
                         color='blue', fontweight='bold', fontsize=canvas_width)
 
