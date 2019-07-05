@@ -14,7 +14,7 @@ Faculty Adviser: Professor Percival Guevarra
 Notes
 ---
 7/5/2019 Note:
-Now fullfilling all functionalities specified in the project contract.
+Now fulfilled all functionality specified in the project contract.
 
 
 7/1/2019 Note:
