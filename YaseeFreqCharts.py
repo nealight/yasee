@@ -73,8 +73,9 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         pyplot.figure(figsize=(canvas_width, canvas_length))
         pyplot.bar(indexes, [x[1] for x in ranked_freq], 2)
         pyplot.xticks(indexes, [x[0] for x in ranked_freq])
-        pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length, horizontalalignment='center')
-        pyplot.title(chart_name, fontweight='bold', color='orange', fontsize= canvas_width * 1.7,
+        pyplot.yticks(fontsize = canvas_length * 1)
+        pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length * 1.5, horizontalalignment='center')
+        pyplot.title(chart_name, fontweight='bold', color='orange', fontsize= canvas_width * 2,
                      horizontalalignment='center')
 
         for x_axis, y_axis in zip(indexes, (freq for x, freq in ranked_freq)):
