@@ -34,23 +34,24 @@ def gen_verification(str_expr: str) -> Callable:
 
 class YaseeFreqCharts(YaseeAnalysisClass):
     def storeWordFreq(self, sheet_name: str, column_name: str, file_name: str, top_X: int = 10) -> None:
-        entries = self.report_file.extractColumn(sheet=sheet_name, column=column_name)
-        ranked_word_freq = YaseeFreqCharts.calcWordFreq(entries, self.ysw)[:top_X]
+        entries = self._report_file.extractColumn(sheet=sheet_name, column=column_name)
+        ranked_word_freq = YaseeFreqCharts.calcWordFreq(entries, self._ysw)[:top_X]
         YaseeFreqCharts.storeChart(file_name=file_name,
                                    chart_name="Frequent Words",
-                                   ranked_freq=ranked_word_freq)
+                                   ranked_freq=ranked_word_freq,
+                                   categories="Words")
 
     def storeRelatedWordFreq(self, sheet_name: str, identity_column: str, data_column: str, target_expr: str,
                              file_name: str, top_X: int = 5, is_related_freq: bool = False) -> None:
-        correlation_data = self.report_file.extractRelatedColumns(sheet_name, identity_column,
-                                                                  data_column)
+        correlation_data = self._report_file.extractRelatedColumns(sheet_name, identity_column,
+                                                                   data_column)
         ranked_freq = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_expr.lower(), is_related_freq)[:top_X]
 
 
 
-        YaseeFreqCharts.storeChart(file_name, f"{target_expr.upper()} "
+        YaseeFreqCharts.storeChart(file_name, f"\"{target_expr.upper()}\" "
         f"{'Relative Frequency(%)' if is_related_freq else 'Absolute Frequency'} "
-        f"in Relation to {identity_column}", ranked_freq)
+        f"in Relation to {identity_column}", ranked_freq, identity_column)
 
     @staticmethod
     def calcRelatedWordFreq(correlation_data: ((str)), target_expr: str, is_relative_freq: bool = False) -> [tuple]:
@@ -83,7 +84,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
             return sorted(word_freq_dict.items(), key=lambda x: -x[1])
 
     @staticmethod
-    def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple]) -> None:
+    def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple], categories:str) -> None:
         if len(ranked_freq) == 0:
             raise NoSearchResultsFound
 
@@ -97,16 +98,19 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
         pyplot.figure(figsize=(canvas_width, canvas_length))
         pyplot.bar(indexes, [x[1] for x in ranked_freq], 2)
-        pyplot.xticks(indexes, [x[0] for x in ranked_freq])
+        pyplot.xticks(indexes,
+                      [(lambda x: (x[:17] + "...") if (len(x) >= 20) else (x))(x[0]) for x in ranked_freq],
+                      fontsize=canvas_width * 0.7)
         pyplot.yticks(fontsize=canvas_length * 1)
+        pyplot.xlabel(categories, fontweight='bold', fontsize=canvas_width * 1.25, horizontalalignment='center')
         pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length * 1.25, horizontalalignment='center')
+
         pyplot.title(chart_name, fontweight='bold', color='orange', fontsize=canvas_width * 1.5,
                      horizontalalignment='center')
 
-        f = lambda x, y: x - len(str(y)[:5]) * 0.5 + (0.3 if '.' in str(y) else 0)
 
         for x_axis, y_axis in zip(indexes, (freq for x, freq in ranked_freq)):
-            pyplot.text(f(x_axis, y_axis),
+            pyplot.text((lambda x, y: x - len(str(y)[:5]) * 0.5 + (0.3 if '.' in str(y) else 0))(x_axis, y_axis),
                         y_axis, str(y_axis)[:5],
                         color='blue', fontweight='bold', fontsize=canvas_width)
 

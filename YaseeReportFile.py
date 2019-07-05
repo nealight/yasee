@@ -23,8 +23,11 @@ class YaseeReportFile:
     def __getitem__(self, item) -> pandas.DataFrame:
         return self.sheets[item]
 
-    def getSheetNames(self) -> tuple:
+    def getSheetNames(self) -> (str,):
         return tuple(self.sheets.keys())
+
+    def getColumnNames(self, sheet:str) -> (str,):
+        return tuple(self.sheets[sheet])
 
     def extractColumn(self, sheet:str, column:str) -> (str,):
         return tuple(str(i).strip() for i in self.sheets[sheet][column])

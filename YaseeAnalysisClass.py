@@ -6,16 +6,20 @@ from YaseeReportFile import YaseeReportFile
 class YaseeAnalysisClass():
     def __init__(self, path: str, stopwords: YaseeStopWords or frozenset = None):
         if stopwords == None:
-            self.ysw = YaseeStopWords()
+            self._ysw = YaseeStopWords()
         elif type(stopwords) == YaseeStopWords:
-            self.ysw = stopwords
+            self._ysw = stopwords
         elif type(stopwords) == frozenset:
-            self.ysw = YaseeStopWords(stopwords)
+            self._ysw = YaseeStopWords(stopwords)
 
-        self.report_file = YaseeReportFile(path)
+        self._report_file = YaseeReportFile(path)
+
 
     def addStopWords(self, additional_words: str or iter):
-        self.ysw.addStopwords(additional_words)
+        self._ysw.addStopwords(additional_words)
 
     def getStopWords(self) -> frozenset:
-        return self.ysw.getStopwords()
+        return self._ysw.getStopwords()
+
+    def getReportFile(self) -> YaseeReportFile:
+        return self._report_file

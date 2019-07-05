@@ -11,17 +11,17 @@ class YaseeFreqChartsTest(unittest.TestCase):
                                       "test/RelatedWordFreq 'pre'.png")
 
     def test_storeWordFreq(self):
-        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqchart.png")
-        self.assertTrue(os.path.exists("test/wordfreqchart.png"))
+        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/WordFreqChart.png")
+        self.assertTrue(os.path.exists("test/WordFreqChart.png"))
 
     def test_storeWordFreqTop20(self):
-        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqchart top20.png", 20)
-        self.assertTrue(os.path.exists("test/wordfreqchart top20.png"))
+        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/WordFreqChart Top20.png", 20)
+        self.assertTrue(os.path.exists("test/WordFreqChart Top20.png"))
 
     def test_addStopWords(self):
         self.yfc.addStopWords("word")
-        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/wordfreqcharexcluding'word'.png")
-        self.assertTrue(os.path.exists("test/wordfreqcharexcluding'word'.png"))
+        self.yfc.storeWordFreq("FQ18", "VisitNotes", "test/WordFreqChartExcluding'word'.png")
+        self.assertTrue(os.path.exists("test/WordFreqChartExcluding'word'.png"))
 
     def test_storeRelatedWordFreq(self):
         self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "research",

@@ -6,6 +6,7 @@ from YaseeFreqCharts import NoSearchResultsFound
 from YaseeAnalysisClass import YaseeAnalysisClass
 
 
+
 def init_analysis_class(analysis_class:type) -> "type()":
     print("Where is your file?")
     target_file_path = input().strip()
@@ -30,11 +31,15 @@ class Console():
             ###
 
             if (user_prompt in ("a", "word cloud")):
-                analysis = init_analysis_class(YaseeWordCloud)
+                analysis: YaseeWordCloud= init_analysis_class(YaseeWordCloud)
 
                 print("Which excel sheet to analyze?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getSheetNames()}")
                 target_sheet = input().strip()
                 print("Which excel column inside that sheet to analyze?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getColumnNames(target_sheet)}")
                 target_column = input().strip()
 
                 print("What would be the name of your analysis file?")
@@ -42,11 +47,15 @@ class Console():
                 analysis.store(target_sheet, target_column, output_path)
 
             elif (user_prompt in ("b", "word freq chart")):
-                analysis = init_analysis_class(YaseeFreqCharts)
+                analysis:YaseeFreqCharts = init_analysis_class(YaseeFreqCharts)
 
                 print("Which excel sheet to analyze?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getSheetNames()}")
                 target_sheet = input().strip()
                 print("Which excel column inside that sheet to analyze?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getColumnNames(target_sheet)}")
                 target_column = input().strip()
 
                 print("What would be the name of your analysis file?")
@@ -57,21 +66,26 @@ class Console():
                 analysis.storeWordFreq(target_sheet, target_column, output_path, result_num)
 
             elif (user_prompt in ("c", )):
-                analysis = init_analysis_class(YaseeFreqCharts)
+                analysis:YaseeFreqCharts = init_analysis_class(YaseeFreqCharts)
                 print("Which excel sheet to analyze?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getSheetNames()}")
                 target_sheet = input().strip()
 
 
                 print("Which excel column inside that sheet to extract words?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getColumnNames(target_sheet)}")
                 data_column = input().strip()
+                print("And what column to analyze in relation to the previously chosen column?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getColumnNames(target_sheet)}")
+                identity_column = input().strip()
+
 
                 print("What is your specified expression?\n"
                       "Examples: pre*, *ation, research, ...")
                 target_expression = input().strip()
-
-
-                print("And what column to analyze in relation to that word?")
-                identity_column = input().strip()
 
 
                 print("What would be the name of your analysis file?")

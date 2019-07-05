@@ -14,6 +14,16 @@ class YaseeReportFileTest(unittest.TestCase):
     def test_getitem(self):
         self.assertEqual("Cours", str(self.report_file["FQ18"].iloc[0])[:5])
 
+    def test_getSheetNames(self):
+        result = self.report_file.getSheetNames()
+        self.assertIsInstance(result, tuple)
+        self.assertEqual("FQ18", result[0])
+
+    def test_getColumnNames(self):
+        result = self.report_file.getColumnNames(self.report_file.getSheetNames()[0])
+        self.assertIsInstance(result, tuple)
+        self.assertEqual("CourseDeptID", result[0])
+
     def test_extractColumn(self):
         self.assertEqual("Student had a number of supplemental essays - wanted to know how much cross over she should "
                          "have between PS, SOP, and supplementals.",
