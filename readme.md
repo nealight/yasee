@@ -14,8 +14,7 @@ Faculty Adviser: Professor Percival Guevarra
 Notes
 ---
 7/5/2019 Note:
-Now fulfilled all functionality specified in the project contract.
-
+Now a demo directory is included to showcase the program's outputs.
 
 7/1/2019 Note:
 Unittests use an internal UCI Writing Center report file as input. The file is not included
