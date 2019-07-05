@@ -16,6 +16,7 @@ Notes
 7/5/2019 Note:
 Now a demo directory is included to showcase the program's outputs.
 
+
 7/1/2019 Note:
 Unittests use an internal UCI Writing Center report file as input. The file is not included
 in this public repo for privacy concerns. 
