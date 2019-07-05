@@ -40,8 +40,8 @@ class YaseeFreqChartsTest(unittest.TestCase):
 
     def test_storeRelatedRECase1(self):
         self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "regex:(\w){3}",
-                                      "test/RelatedRE regex:(\w){3}.png")
-        self.assertTrue(os.path.exists("test/RelatedRE regex:(\w){3}.png"))
+                                      "test/RelatedRE 3-letter-word.png")
+        self.assertTrue(os.path.exists("test/RelatedRE 3-letter-word.png"))
 
     def test_storeRelatedRECase2(self):
         self.assertRaises(NoSearchResultsFound, self.yfc.storeRelatedWordFreq, "FQ18", "MajorID1",

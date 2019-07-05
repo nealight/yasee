@@ -14,3 +14,6 @@ class YaseeAnalysisClass():
 
     def addStopWords(self, additional_words: str or iter):
         self.ysw.addStopwords(additional_words)
+
+    def getStopWords(self) -> frozenset:
+        return self.ysw.getStopwords()
