@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/YaseeFreqCharts.py" line="62" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/machine.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YaseeFreqCharts.py" beforeDir="false" afterPath="$PROJECT_DIR$/YaseeFreqCharts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_YaseeFreqCharts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_YaseeFreqCharts.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,25 +42,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+            <state relative-caret-position="294">
+              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
               <folding>
                 <element signature="e#17#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_YaseeReportFile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-              <folding>
-                <element signature="e#19#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,13 +57,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
+            <state relative-caret-position="157">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
                 <element signature="e#64#105#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation'.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -85,29 +82,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research'.png">
+        <entry file="file://$PROJECT_DIR$/test/wordfreqcharexcluding'word'.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/wordfreqchart.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YaseeAnalysisClass.py">
+        <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="71" selection-start-column="71" selection-end-column="71" />
+            <state relative-caret-position="262">
+              <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
               <folding>
-                <element signature="e#73#114#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/wordfreqcharexcluding'word'.png">
+        <entry file="file://$PROJECT_DIR$/test/wordfreqchart.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
@@ -158,14 +150,14 @@
         <option value="$PROJECT_DIR$/test_ReportFile.py" />
         <option value="$PROJECT_DIR$/exp/panda_exp.py" />
         <option value="$PROJECT_DIR$/documentation/Windows Quick Installation/Installation Guide.txt" />
-        <option value="$PROJECT_DIR$/test_YaseeFreqCharts.py" />
         <option value="$PROJECT_DIR$/YaseeStopWords.py" />
         <option value="$PROJECT_DIR$/YaseeReportFile.py" />
         <option value="$PROJECT_DIR$/YaseeWordCloud.py" />
         <option value="$PROJECT_DIR$/YaseeAnalysisClass.py" />
         <option value="$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/test_YaseeFreqCharts.py" />
         <option value="$PROJECT_DIR$/YaseeFreqCharts.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -248,7 +240,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest">
+  <component name="RunManager" selected="Python.main">
     <configuration name="ReportFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yasee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -340,10 +332,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" />
         <item itemvalue="Python tests.Unittests in test_YaseeReportFile.py" />
         <item itemvalue="Python tests.Unittests for test_YaseeWordCloud.YaseeWordCloudTest" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.ReportFile" />
       </list>
     </recent_temporary>
@@ -425,7 +417,8 @@
       <workItem from="1562172570979" duration="1215000" />
       <workItem from="1562199596691" duration="68000" />
       <workItem from="1562205768767" duration="469000" />
-      <workItem from="1562342694015" duration="2313000" />
+      <workItem from="1562342694015" duration="3574000" />
+      <workItem from="1562346317065" duration="852000" />
     </task>
     <task id="LOCAL-00001" summary="6-24 NL0&#10;&#10;Can instantiate ReportFile object, which stores excel files in the form readable to the Pandas library.">
       <created>1561421707897</created>
@@ -742,31 +735,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562175894541</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="7-5 NL1&#10;&#10;- Now bar charts show data points' exact figures above bars. It also displays y-axis labels and chart titles.&#10;&#10;Future direction:&#10;1. Implement an interface to change stopwords.&#10;2. Implement &quot;SmartAnalysis&quot; of correlation.">
+      <created>1562345086678</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1562345086678</updated>
+    </task>
+    <task id="LOCAL-00047" summary="7-5 NL2&#10;&#10;- Optimized bar chart font sizes for viewer's convenience.&#10;&#10;Future direction:&#10;1. Implement an interface to change stopwords.&#10;2. Implement &quot;SmartAnalysis&quot; of correlation.">
+      <created>1562345345596</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1562345345596</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 34m 22s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 34m 38s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 35m 13s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 36m 01s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 36m 32s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 37m 48s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 38m 00s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 42m 02s.xml">
       <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
     </history-entry>
@@ -776,20 +762,40 @@
     <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 43m 06s.xml">
       <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 47m 21s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 47m 41s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 48m 07s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 09h 48m 32s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 10h 11m 05s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 10h 13m 41s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.05 at 10h 13m 59s.xml">
+      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63400000" />
+    <option name="totallyTimeSpent" value="65513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="21" y="23" width="1440" height="786" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.22103004" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.22389127" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.2536023" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.24351585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39913544" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -886,8 +892,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Beta 1.0&#10;&#10;- The project now includes a dependencies.txt that will guide the user to configure a local Windows python environment, on which they will be able to run our visualization program.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
-    <MESSAGE value="Beta 1.0.1&#10;&#10;- Added some unittests and some minor tweaks.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.2&#10;&#10;- Some minor tweaks.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a requirements.txt indicating our project dependencies.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
     <MESSAGE value="Beta 1.0.3&#10;&#10;- Added a batch file that will automate dependency configurations on Windows.&#10;- Updated the documentations accordingly.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation." />
@@ -911,44 +915,17 @@
     <MESSAGE value="7-2 NL2&#10;&#10;- Implemented visualization of word(root) frequency in relation to a chosen category.&#10;&#10;Future direction:&#10;1. Verify the newly added functionality.&#10;2. Implement an interface to change stopwords.&#10;3. Implement &quot;SmartAnalysis&quot; of correlation." />
     <MESSAGE value="7-2 NL3&#10;&#10;- Fixed a few bugs with YaseeFreqCharts.&#10;- Make it so that an error is raised when no search result is found in the storeChart method inside YaseeFreqCharts.&#10;&#10;Future direction:&#10;1. Verify the newly added functionality.&#10;2. Implement an interface to change stopwords.&#10;3. Implement &quot;SmartAnalysis&quot; of correlation." />
     <MESSAGE value="7-3 NL1&#10;&#10;- Added annotations for multiple source files.&#10;&#10;Future direction:&#10;1. Verify the newly added functionality.&#10;2. Implement an interface to change stopwords.&#10;3. Implement &quot;SmartAnalysis&quot; of correlation." />
-    <option name="LAST_COMMIT_MESSAGE" value="7-3 NL1&#10;&#10;- Added annotations for multiple source files.&#10;&#10;Future direction:&#10;1. Verify the newly added functionality.&#10;2. Implement an interface to change stopwords.&#10;3. Implement &quot;SmartAnalysis&quot; of correlation." />
+    <MESSAGE value="7-5 NL1&#10;&#10;- Now bar charts show data points' exact figures above bars. It also displays y-axis labels and chart titles.&#10;&#10;Future direction:&#10;1. Implement an interface to change stopwords.&#10;2. Implement &quot;SmartAnalysis&quot; of correlation." />
+    <MESSAGE value="7-5 NL2&#10;&#10;- Optimized bar chart font sizes for viewer's convenience.&#10;&#10;Future direction:&#10;1. Implement an interface to change stopwords.&#10;2. Implement &quot;SmartAnalysis&quot; of correlation." />
+    <option name="LAST_COMMIT_MESSAGE" value="7-5 NL2&#10;&#10;- Optimized bar chart font sizes for viewer's convenience.&#10;&#10;Future direction:&#10;1. Implement an interface to change stopwords.&#10;2. Implement &quot;SmartAnalysis&quot; of correlation." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest.coverage" NAME="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest Coverage Results" MODIFIED="1562344980005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1562110159003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest.coverage" NAME="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest Coverage Results" MODIFIED="1562346831902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1562347125779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_in_test_YaseeReportFile_py.coverage" NAME="Unittests in test_YaseeReportFile.py Coverage Results" MODIFIED="1562175861508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeWordCloud_YaseeWordCloudTest.coverage" NAME="Unittests for test_YaseeWordCloud.YaseeWordCloudTest Coverage Results" MODIFIED="1562175858451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/util/_decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Archive/ICS 32/Projects/Project 4-5/test_project5_gamelogic.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/xlrd/xlsx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pandas/io/excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="349" selection-start-line="349" selection-end-line="349" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -982,13 +959,6 @@
     <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Quizes/q3helper/distance_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-166" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Quizes/q4helper/q4solution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="117" column="24" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exp/word frequency.png" />
@@ -1073,21 +1043,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hi.png" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeStopWords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,30 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="64" selection-start-column="64" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="34" column="70" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_YaseeStopWords.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1142,9 +1077,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_YaseeReportFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#19#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YaseeStopWords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Quizes/q1helper/q1solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1721" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Quizes/q2helper/q2solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="134" column="26" lean-forward="true" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Quizes/q3helper/misspelling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Quizes/q4helper/q4solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Programs/program1/influence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1540">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YaseeReportFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="342">
           <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
@@ -1159,23 +1142,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
-          <folding>
-            <element signature="e#17#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
+    <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
-          <folding>
-            <element signature="e#64#105#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="64" selection-start-column="64" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Archive/ICS 33/Programs/program4/checkannotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="158" column="29" selection-start-line="158" selection-start-column="29" selection-end-line="158" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1194,15 +1178,41 @@
     <entry file="file://$PROJECT_DIR$/test/wordfreqchart top20.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#64#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're'.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_YaseeReportFile.py">
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation'.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="262">
+          <caret line="34" column="79" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
           <folding>
-            <element signature="e#19#34#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hi.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <folding>
+            <element signature="e#17#58#0" expanded="true" />
           </folding>
         </state>
       </provider>

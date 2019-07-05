@@ -25,9 +25,14 @@ class YaseeFreqChartsTest(unittest.TestCase):
         self.assertTrue(os.path.exists("test/RelatedWordFreq 'research'.png"))
 
     def test_storeRelatedWordRootFreq(self):
-        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "re",
-                                      "test/RelatedWordRootFreq 're'.png", is_word_root=True)
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "re*",
+                                      "test/RelatedWordRootFreq 're'.png")
         self.assertTrue(os.path.exists("test/RelatedWordRootFreq 're'.png"))
+
+    def test_storeRelatedWordSuffix(self):
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "*ation",
+                                      "test/RelatedWordSuffixtFreq 'ation'.png")
+        self.assertTrue(os.path.exists("test/RelatedWordSuffixtFreq 'ation'.png"))
 
 
     def test_NoSearchResultsFound(self):

@@ -12,6 +12,21 @@ class NoSearchResultsFound(YaseeFreqChartsError):
     pass
 
 
+def gen_verification(str_expr: str) -> "function":
+    f = lambda x: True if x == str_expr else False
+
+    if str_expr[-1] == '*':
+        def f(words: str) -> bool:
+            begin_words = str_expr[:-1]
+            return words[:begin_words.__len__()] == begin_words
+
+    elif str_expr[0] == '*':
+        def f(words: str) -> bool:
+            end_words = str_expr[1:]
+            return words[-end_words.__len__():] == end_words
+
+    return f
+
 class YaseeFreqCharts(YaseeAnalysisClass):
     def storeWordFreq(self, sheet_name: str, column_name: str, file_name: str, top_X: int = 10) -> None:
         entries = self.report_file.extractColumn(sheet=sheet_name, column=column_name)
@@ -20,37 +35,33 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                                    chart_name="Frequent Words",
                                    ranked_freq=ranked_word_freq)
 
-    def storeRelatedWordFreq(self, sheet_name: str, identity_column: str, data_column: str, target_word: str,
-                             file_name: str, top_X: int = 5, is_word_root: bool = False) -> None:
+    def storeRelatedWordFreq(self, sheet_name: str, identity_column: str, data_column: str, target_expr: str,
+                             file_name: str, top_X: int = 5) -> None:
         correlation_data = self.report_file.extractRelatedColumns(sheet_name, identity_column,
                                                                  data_column)
-        ranked_freq = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_word.lower(), is_word_root)[:top_X]
-        YaseeFreqCharts.storeChart(file_name, f"{target_word.upper() + ('*' if is_word_root else '')} "
+        ranked_freq = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_expr.lower())[:top_X]
+        YaseeFreqCharts.storeChart(file_name, f"{target_expr.upper()} "
         f"Frequency in Relation to {identity_column}", ranked_freq)
 
 
 
     @staticmethod
-    def calcRelatedWordFreq(correlation_data:((str, ...), ...), target_word:str, is_word_root: bool = False) \
-        -> [tuple, ...]:
+    def calcRelatedWordFreq(correlation_data:((str, ...), ...), target_expr:str)  -> [tuple, ...]:
 
         word_freq_dict = defaultdict(int)
 
-        if is_word_root:
-            for identity, entry in correlation_data:
-                if identity != "nan":
-                    words = str(entry).split()
-                    for word in words:
-                        if word.lower()[:len(target_word)] == target_word:
-                            word_freq_dict[identity] += 1
 
+        if type(target_expr) == str:
+            verification = gen_verification(target_expr)
         else:
-            for identity, entry in correlation_data:
-                if identity != "nan":
-                    words = str(entry).split()
-                    for word in words:
-                        if word.lower() == target_word:
-                            word_freq_dict[identity] += 1
+            verification = None
+
+        for identity, entry in correlation_data:
+            if identity != "nan":
+                words = str(entry).split()
+                for word in words:
+                    if verification(word.lower()):
+                        word_freq_dict[identity] += 1
 
 
         return sorted(word_freq_dict.items(), key=lambda x: -x[1])

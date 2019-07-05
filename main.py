@@ -17,7 +17,7 @@ class Console():
             print("Hi! You have the following options\n"
                   "a) word cloud\n"
                   "b) word freq chart\n"
-                  "c) specified word(root) freq in relation to a column\n"
+                  "c) specified expression freq in relation to a column\n"
                   "q) quit\n", end="")
             user_prompt = input().strip().lower()
             if (user_prompt in ("seeya", "see you", "quit", "q")):
@@ -50,7 +50,7 @@ class Console():
 
                 word_freq_chart.storeWordFreq(target_sheet, target_column, output_path, result_num)
 
-            elif (user_prompt in ("c", "specified word(root) freq in relation to a column")):
+            elif (user_prompt in ("c", )):
                 freq_chart: YaseeFreqCharts = init_analysis_class(YaseeFreqCharts)
                 print("Which excel sheet to analyze?")
                 target_sheet = input().strip()
@@ -59,14 +59,10 @@ class Console():
                 print("Which excel column inside that sheet to extract words?")
                 data_column = input().strip()
 
-                print("What is the word that you want to analyze?\n"
-                      "If it is a word root, append the root by *, like pre*, re*")
-                target_word = input().strip()
+                print("What is your specified expression?\n"
+                      "Examples: pre*, *ation, research, ...")
+                target_expression = input().strip()
 
-                is_word_root = False
-                if target_word[-1] == '*':
-                    is_word_root = True
-                    target_word = target_word[:-1]
 
                 print("And what column to analyze in relation to that word?")
                 identity_column = input().strip()
@@ -78,10 +74,10 @@ class Console():
                 top_X = int(input().strip())
 
                 try:
-                    freq_chart.storeRelatedWordFreq(target_sheet, identity_column, data_column, target_word,
-                                                output_path, top_X, is_word_root)
+                    freq_chart.storeRelatedWordFreq(target_sheet, identity_column, data_column, target_expression,
+                                                output_path, top_X)
                 except NoSearchResultsFound:
-                    print(f"No search result for {target_word + ('*' if is_word_root else '')}")
+                    print(f"\nNo search result found for {target_expression}!\n")
 
             else:
                 print("That is not a valid command.")
