@@ -76,7 +76,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                         word_freq_dict[identity] += 1
 
         for key, value in word_freq_dict.items():
-            relative_word_freq_dict[key] = value / identity_dict[key]
+            relative_word_freq_dict[key] = value / identity_dict[key] * 100
 
         if is_relative_freq:
             return sorted(relative_word_freq_dict.items(), key=lambda x: -x[1])
