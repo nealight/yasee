@@ -1,52 +1,37 @@
 "RESEARCH" context referred to by line number:
-ECONOMICS:[(7, 'research', '...course of the session. We reviewed how to research the scope of the problems and how ...')]
 
+
+ECONOMICS:[(7, 'research', '...course of the session. We reviewed how to research the scope of the problems and how ...')]
 
 PUB HEALTH SCIENCES:[(19, 'research', '...wanted to convert a case report into a research paper for UROP, so we went over ...')]
 
-
 RELIGIOUS STUDIES:[(29, 'research', '...We also talked about doing a bit of research on a program so she can choo ')]
-
 
 CHEMISTRY:[(42, 'research', 'The student wanted to brainstorm research topics, so we started with the idea ...'), (222, 'research', 'rethinking approach; defining RA and audience; research techniques; outline ')]
 
-
 AEROSPACE ENGR:[(54, 'research', '...talked about connecting personal experience to evidence from research within body paragraphs to contextualize and strengthen ...')]
-
 
 CRIM, LAW & SOCIETY:[(100, 'research', 'research process; approaching potential sources; reverse outlining; considering ...'), (178, 'research', 'Introduction to research and SOC. Tips and tricks for using ...'), (591, 'research', '...ideas that she had so far and what research was informing them. Then, we talked about ...'), (673, 'research', '...basic organizational principle of an advocacy essay, library research strategies and the possibility of doing field ...'), (673, 'research', '...research strategies and the possibility of doing field research as well. SC ')]
 
-
 COMPUTER SCIENCE:[(112, 'research', 'HCP; research and brainstorming ')]
-
 
 BIOMED ENGR: PREMED:[(116, 'research', '...make the report a true business pitch for research he added language that would make a ...')]
 
-
 BUSINESS ADMIN:[(338, 'research', '...We talked about what a rhetorical analysis is, research strategies and brainstorming. SC ')]
-
 
 PSYCH & SOC BEHAVIOR:[(394, 'research', '...so that it more clearly points to the research question and also to eliminate redundancy, making ...')]
 
-
 UNDECLARED:[(528, 'research', '...and historical events she might research, utilizing the research librarians and making a timeline. We also ...'), (540, 'research', 'We previewed the paper outline for APA research on childhood obesity and its connection to ...')]
-
 
 BIOLOGICAL SCIENCES:[(553, 'research', '...we talked about how she could contextualize her research for readers in the field of ecology ...')]
 
-
 INTERNATIONAL STUDIES:[(671, 'research', '11/16/18 We discussed research strategies, paragraph organization, citations and reverse outlining. ...')]
-
 
 ENGLISH:[(771, 'research', '...than 3 words from the original, citing sources, research strategies and note taking. We watched the ...')]
 
-
 MATHEMATICS:[(782, 'Research', 'Research Paper on discourses college students have on ...')]
-
 
 NURSING SCIENCE:[(787, 'research', '...her research question, narrowing the focus of the research project and stating it more clearly, and ...'), (787, 'research', '...review under topic sentences that lead to her research question, narrowing the focus of the research ...')]
 
-
 EDUCATION SCIENCES:[(827, 'research', '...literature review and implications, so we used her research questions to practice making her argument more ...')]
-
 

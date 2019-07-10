@@ -17,7 +17,7 @@ class NoSearchResultsFound(YaseeFreqChartsError):
 
 
 def gen_verification(str_expr: str) -> Callable:
-    f = lambda x: True if x == str_expr else False
+
 
     if str_expr[-1] == '*':
         def f(words: str) -> bool:
@@ -28,6 +28,8 @@ def gen_verification(str_expr: str) -> Callable:
         def f(words: str) -> bool:
             end_words = str_expr[1:]
             return words[-end_words.__len__():] == end_words
+    else:
+        f = lambda x: True if x == str_expr else False
 
     return f
 
@@ -68,22 +70,29 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                                    categories="Words")
 
     def storeRelatedWordFreq(self, sheet_name: str, identity_column: str, data_column: str, target_expr: str,
-                             file_name: str, top_X: int = 5, is_related_freq: bool = False) -> None:
+                             file_name: str, top_X: int = 5) -> None:
         correlation_data = self._report_file.extractRelatedColumns(sheet_name, identity_column,
                                                                    data_column)
-        (ranked_freq, context) = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_expr.lower(), is_related_freq)
-        ranked_freq = ranked_freq[:top_X]
+        (relative_ranked, absolute_ranked, context) = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_expr.lower())
+        (relative_ranked, absolute_ranked) = (relative_ranked[:top_X], absolute_ranked[:top_X])
 
-        YaseeFreqCharts.storeChart(file_name, f"\"{target_expr.upper()}\" "
-        f"{'Relative Frequency(%)' if is_related_freq else 'Absolute Frequency'} "
-        f"in Relation to {identity_column}", ranked_freq, identity_column)
+
+
+        YaseeFreqCharts.storeChart(file_name + " RELATIVE", f"\"{target_expr.upper()}\" "
+        f"{'Relative Frequency(%)'} "
+        f"in Relation to {identity_column}", relative_ranked, identity_column)
+
+        YaseeFreqCharts.storeChart(file_name + " ABSOLUTE", f"\"{target_expr.upper()}\" "
+        f"{'Absolute Frequency'} "
+        f"in Relation to {identity_column}", absolute_ranked, identity_column)
 
         YaseeFreqCharts.storeContextasTXT(file_name, target_expr, context)
 
 
 
+
     @staticmethod
-    def calcRelatedWordFreq(correlation_data: ((str)), target_expr: str, is_relative_freq: bool = False) -> ([()], defaultdict):
+    def calcRelatedWordFreq(correlation_data: ((str)), target_expr: str) -> ([()], defaultdict):
 
         word_freq_dict = defaultdict(int)
         identity_dict = defaultdict(int)
@@ -109,10 +118,8 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         for key, value in word_freq_dict.items():
             relative_word_freq_dict[key] = value / identity_dict[key] * 100
 
-        if is_relative_freq:
-            return (sorted(relative_word_freq_dict.items(), key=lambda x: -x[1]), context_dict)
-        else:
-            return (sorted(word_freq_dict.items(), key=lambda x: -x[1]), context_dict)
+
+        return (sorted(relative_word_freq_dict.items(), key=lambda x: -x[1]), sorted(word_freq_dict.items(), key=lambda x: -x[1]), context_dict)
 
     @staticmethod
     def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple], categories:str) -> None:
@@ -145,7 +152,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                         y_axis, str(y_axis)[:5],
                         color='blue', fontweight='bold', fontsize=canvas_width)
 
-        pyplot.savefig(file_name)
+        pyplot.savefig(file_name + ".png")
 
     @staticmethod
     def calcWordFreq(entries: (str, ...), ysw: YaseeStopWords) -> [tuple]:
@@ -162,7 +169,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
     def storeContextasTXT(file_name: str, target_expr: str, context:dict) -> None:
         file = open((file_name + ".txt") if (".txt" not in file_name) else file_name, 'w')
         try:
-            file.write(f'"{target_expr.upper()}" context referred to by line number:\n')
-            file.writelines((str(i) + ':' + str(sorted(c)) + "\n\n\n") for i, c in context.items())
+            file.write(f'"{target_expr.upper()}" context referred to by line number:\n\n\n')
+            file.writelines((str(i) + ':' + str(sorted(c)) + "\n\n") for i, c in context.items())
         finally:
             file.close()
