@@ -14,7 +14,7 @@ Faculty Adviser: Professor Percival Guevarra
 Notes
 ---
 7/10/2019 Note:
-A "context file" is now included in the demo directory. The file points to where the target expression is found and their respective contexts.
+A "context file" in txt format is now included in the demo directory. The file points to where the target expression is found and their respective contexts.
 
 
 7/5/2019 Note:
