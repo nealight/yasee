@@ -6,7 +6,7 @@ in University of California, Irvine.
 
 People
 ---
-Main contributor: Alan Xu
+Main contributor: Yi (Alan) Xu
 
 Faculty Adviser: Professor Percival Guevarra
 
