@@ -92,7 +92,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
     @staticmethod
-    def calcRelatedWordFreq(correlation_data: ((str)), target_expr: str) -> ([()], defaultdict):
+    def calcRelatedWordFreq(correlation_data: ((str)), target_expr: str) -> ([()]):
 
         word_freq_dict = defaultdict(int)
         identity_dict = defaultdict(int)
@@ -119,7 +119,8 @@ class YaseeFreqCharts(YaseeAnalysisClass):
             relative_word_freq_dict[key] = value / identity_dict[key] * 100
 
 
-        return (sorted(relative_word_freq_dict.items(), key=lambda x: -x[1]), sorted(word_freq_dict.items(), key=lambda x: -x[1]), context_dict)
+        return (sorted(relative_word_freq_dict.items(), key=lambda x: -x[1]), sorted(word_freq_dict.items(), key=lambda x: -x[1]),
+                sorted(context_dict.items(), key=lambda x:-len(x[1])))
 
     @staticmethod
     def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple], categories:str) -> None:
@@ -138,7 +139,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         pyplot.bar(indexes, [x[1] for x in ranked_freq], 2)
         pyplot.xticks(indexes,
                       [(lambda x: (x[:17] + "...") if (len(x) >= 20) else (x))(x[0]) for x in ranked_freq],
-                      fontsize=canvas_width * 0.7)
+                      fontsize=canvas_width * 0.5)
         pyplot.yticks(fontsize=canvas_length * 1)
         pyplot.xlabel(categories, fontweight='bold', fontsize=canvas_width, horizontalalignment='center')
         pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length * 1.25, horizontalalignment='center')
@@ -166,10 +167,10 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
     @staticmethod
-    def storeContextasTXT(file_name: str, target_expr: str, context:dict) -> None:
+    def storeContextasTXT(file_name: str, target_expr: str, context:()) -> None:
         file = open((file_name + ".txt") if (".txt" not in file_name) else file_name, 'w')
         try:
             file.write(f'"{target_expr.upper()}" context referred to by line number:\n\n\n')
-            file.writelines((str(i) + ':' + str(sorted(c)) + "\n\n") for i, c in context.items())
+            file.writelines((str(i) + f"[{str(len(c))} times]:" + str(sorted(c)) + "\n\n") for i, c in context)
         finally:
             file.close()
