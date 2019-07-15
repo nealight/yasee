@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!">
-      <change afterPath="$PROJECT_DIR$/YaseeCorrelationAnalyzer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_YaseeCorrelationAnalyzer.py" afterDir="false" />
+    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,21 +36,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
               <folding>
                 <element signature="e#17#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -68,6 +60,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/MI_SCORES RESEARCH.txt">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -182,12 +183,12 @@
         <option value="$PROJECT_DIR$/test_YaseeCorrelationAnalyzer.py" />
         <option value="$PROJECT_DIR$/exp/sklearn_exp.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="47" />
-    <option name="y" value="41" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="782" />
   </component>
@@ -205,6 +206,11 @@
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
               <item name="yasee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yasee" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
@@ -465,21 +471,7 @@
       <workItem from="1562949795860" duration="1941000" />
       <workItem from="1563207351396" duration="1820000" />
       <workItem from="1563209320911" duration="1000" />
-      <workItem from="1563209605744" duration="6043000" />
-    </task>
-    <task id="LOCAL-00022" summary="Beta 1.0.3&#10;&#10;- Added a requirements.txt indicating our project dependencies.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
-      <created>1561574036654</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1561574036654</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Beta 1.0.3&#10;&#10;- Added a batch file that will automate dependency configurations on Windows.&#10;- Updated the documentations accordingly.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
-      <created>1561575008945</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1561575008945</updated>
+      <workItem from="1563209605744" duration="6367000" />
     </task>
     <task id="LOCAL-00024" summary="Beta 1.0.4&#10;&#10;- Added a Python installer.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
       <created>1561581785282</created>
@@ -810,7 +802,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563209040047</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="7-15 NL3&#10;Update:&#10;1. Added the functionality to analyze MI scores across columns!">
+      <created>1563215910828</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1563215910828</updated>
+    </task>
+    <task id="LOCAL-00072" summary="7-15 NL4&#10;Update:&#10;1. Updated dependency requirements. (in the requirements.txt file)">
+      <created>1563216087130</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1563216087130</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -846,18 +852,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94885000" />
+    <option name="totallyTimeSpent" value="95209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="782" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.15879828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.15879828" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.32608697" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.07536232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39855072" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -954,8 +960,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="7-1 NL3&#10;&#10;- Unified the naming convention of certain classes and functions.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
-    <MESSAGE value="7-1 NL4&#10;&#10;- Minor tweaks.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
     <MESSAGE value="7-1 NL5&#10;&#10;- Created a base class YaseeAnalysisClass for analysis classes to inherit from.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
     <MESSAGE value="7-2 NL1&#10;&#10;- Minor tweaks in UI.&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
     <MESSAGE value="7-2 NL2&#10;&#10;- Updated installation documentation.&#10;&#10;Future direction:&#10;1. Support visualization of word root frequency&#10;2. Visualize word frequency in relation to a specific category (Excel form column)." />
@@ -979,7 +983,9 @@
     <MESSAGE value="NL 7-12&#10;Update:&#10;1. Changed visuals.&#10;2. Changed the context file output: now it is ranked by frequency of appearance!&#10;&#10;Future Direction:&#10;1. Further improve on context output file.&#10;2. Do some research on MI score!" />
     <MESSAGE value="NL 7-15&#10;Update:&#10;1. Changed the layout of context output file: it now displays entries vertically, making it easier to scroll through.&#10;&#10;Future Direction:&#10;1. Do some research on MI score!" />
     <MESSAGE value="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!" />
-    <option name="LAST_COMMIT_MESSAGE" value="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!" />
+    <MESSAGE value="7-15 NL3&#10;Update:&#10;1. Added the functionality to analyze MI scores across columns!" />
+    <MESSAGE value="7-15 NL4&#10;Update:&#10;1. Updated dependency requirements. (in the requirements.txt file)" />
+    <option name="LAST_COMMIT_MESSAGE" value="7-15 NL4&#10;Update:&#10;1. Updated dependency requirements. (in the requirements.txt file)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yasee$test_YaseeFreqCharts.coverage" NAME="test_YaseeFreqCharts Coverage Results" MODIFIED="1562352693248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -996,7 +1002,6 @@
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeWordCloud_YaseeWordCloudTest.coverage" NAME="Unittests for test_YaseeWordCloud.YaseeWordCloudTest Coverage Results" MODIFIED="1562777171871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hihi Absolute.txt" />
     <entry file="file://$PROJECT_DIR$/hihi Absolute ABSOLUTE.png" />
     <entry file="file://$PROJECT_DIR$/hihi Absolute RELATIVE.png" />
     <entry file="file://$PROJECT_DIR$/fj.png" />
@@ -1182,9 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/MI_SCORES RESEARCH.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/exp/sklearn_exp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1233,11 +1235,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        <state relative-caret-position="68">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding>
             <element signature="e#17#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/MI_SCORES RESEARCH.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

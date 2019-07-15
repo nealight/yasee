@@ -1,7 +1,7 @@
 Project yasee
 ---
-A visualizer tailored for analyzing data provided from the writing center 
-in University of California, Irvine.
+A meta visualization/data analysis tool to help researchers answer the eternal question "Where should I start?", tailored for consultation data
+provided by the Writing Center in University of California, Irvine.
 
 
 People
