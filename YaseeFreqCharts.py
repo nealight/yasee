@@ -6,7 +6,7 @@ from collections import defaultdict
 from matplotlib import pyplot
 from typing import Callable
 import re
-
+from functools import reduce
 
 class YaseeFreqChartsError(Exception):
     pass
@@ -168,9 +168,14 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
     @staticmethod
     def storeContextasTXT(file_name: str, target_expr: str, context:()) -> None:
+        # Tried a little bit of functional programming paradigm here!
+
         file = open((file_name + ".txt") if (".txt" not in file_name) else file_name, 'w')
         try:
+            combine_as_lines = lambda x, y: f"{x}\n{y}"
+            combine_as_entry = lambda x, y: f"{x}, {y}"
             file.write(f'"{target_expr.upper()}" context referred to by line number:\n\n\n')
-            file.writelines((str(i) + f"[{str(len(c))} times]:" + str(sorted(c)) + "\n\n") for i, c in context)
+            file.write(reduce(combine_as_lines, ((str(i) + f"[{str(len(c))} time(s)]:\n(line number, exact word, context)\n"
+            + reduce(combine_as_lines, (f"({reduce(combine_as_entry, c)})" for c in sorted(c))) + "\n\n") for i, c in context)))
         finally:
             file.close()
