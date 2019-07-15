@@ -1,9 +1,11 @@
 # Local Console
 
 from YaseeWordCloud import YaseeWordCloud
+from YaseeCorrelationAnalyzer import YaseeCorrelationAnalyzer
 from YaseeFreqCharts import YaseeFreqCharts
 from YaseeFreqCharts import NoSearchResultsFound
 from YaseeAnalysisClass import YaseeAnalysisClass
+from functools import reduce
 
 
 
@@ -21,7 +23,7 @@ class Console():
             print("Hi! You have the following options\n"
                   "a) word cloud\n"
                   "b) word freq chart\n"
-                  "c) specified expression freq in relation to a column\n"
+                  "c) specified expression freq chart in relation to a column\n"
                   "q) quit\n", end="")
             user_prompt = input().strip().lower()
 
@@ -66,7 +68,12 @@ class Console():
                 analysis.storeWordFreq(target_sheet, target_column, output_path, result_num)
 
             elif (user_prompt in ("c", )):
-                analysis:YaseeFreqCharts = init_analysis_class(YaseeFreqCharts)
+                analysis:YaseeCorrelationAnalyzer = init_analysis_class(YaseeCorrelationAnalyzer)
+                print("What would be the name of your analysis file?")
+                output_path = input().strip()
+                output_path = (output_path + ".txt") if (".txt" not in output_path) else output_path
+
+
                 print("Which excel sheet to analyze?")
                 print(f"You have the following options:\n"
                       f"{analysis.getReportFile().getSheetNames()}")
@@ -77,21 +84,29 @@ class Console():
                 print(f"You have the following options:\n"
                       f"{analysis.getReportFile().getColumnNames(target_sheet)}")
                 data_column = input().strip()
-                print("And what column to analyze in relation to the previously chosen column?")
-                print(f"You have the following options:\n"
-                      f"{analysis.getReportFile().getColumnNames(target_sheet)}")
-                identity_column = input().strip()
-
 
                 print("What is your specified expression?\n"
                       "Examples: pre*, *ation, research, ...")
                 target_expression = input().strip()
 
+                analysis.storeMIs(output_path, target_sheet, data_column, target_expression)
+                file = open(output_path, 'r')
+                try:
+                    print("========================================")
+                    print(reduce(lambda x, y: x+y, file.readlines()))
+                    print("========================================")
+                finally:
+                    file.close()
 
-                print("What would be the name of your analysis file?")
-                output_path = input().strip()
+
+                print("And what column to analyze in relation to the previously chosen column?")
+                print(f"You have the following options:\n"
+                      f"{analysis.getReportFile().getColumnNames(target_sheet)}")
+                identity_column = input().strip()
+
                 print("How many results do you want to see?")
                 top_X = int(input().strip())
+
 
                 try:
                     analysis.storeRelatedWordFreq(target_sheet, identity_column, data_column, target_expression,

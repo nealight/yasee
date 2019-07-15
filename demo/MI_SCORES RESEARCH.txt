@@ -1,0 +1,21 @@
+"RESEARCH" MI scores with respect to:
+
+
+DueDate: 2.7877881193860072
+MajorID1: 2.6701198898068172
+CourseDeptID: 2.302585092994046
+CourseName: 2.0982737395252498
+Instructor: 2.009709181894145
+RequiredAssignmentLength: 1.8989267893363282
+StaffID: 1.7917594692280547
+HelpType3: 1.3862943611198906
+WritingType: 1.3321790402101223
+AssignmentDescription: 1.1531228502542137
+HelpType2: 1.0986122886681096
+MajorID2: 1.0986122886681096
+DateReported: 0.27876937176858735
+MajorID3: 0.0
+WritingTypeOther: 0.0
+OnlineCourse: 0.0
+VisitLocation: 0.0
+VisitType: 0.0

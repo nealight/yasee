@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
+    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!">
+      <change afterPath="$PROJECT_DIR$/YaseeCorrelationAnalyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_YaseeCorrelationAnalyzer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YaseeFreqCharts.py" beforeDir="false" afterPath="$PROJECT_DIR$/YaseeFreqCharts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,53 +40,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="175" column="55" lean-forward="true" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
-              <folding>
-                <element signature="e#64#105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word ABSOLUTE.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3943" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation'.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-48" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're'.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research'.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-167" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+            <state relative-caret-position="168">
+              <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
               <folding>
                 <element signature="e#17#58#0" expanded="true" />
               </folding>
@@ -93,24 +52,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
+        <entry file="file://$PROJECT_DIR$/analysis.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exp/sklearn_exp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
+            <state relative-caret-position="133">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation' ABSOLUTE.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/demo/MI_SCORES RESEARCH.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py">
+        <entry file="file://$PROJECT_DIR$/YaseeCorrelationAnalyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+            <state relative-caret-position="277">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="84" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1611">
+              <caret line="174" column="12" lean-forward="true" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="92" />
+              <folding>
+                <element signature="e#64#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_YaseeCorrelationAnalyzer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/MI_SCORES RESEARCH.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_YaseeFreqCharts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="950">
+              <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -166,14 +176,18 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py" />
         <option value="$PROJECT_DIR$/YaseeStopWords.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/YaseeFreqCharts.py" />
+        <option value="$PROJECT_DIR$/YaseeCorelationAnalyzer.py" />
+        <option value="$PROJECT_DIR$/YaseeCorrelationAnalyzer.py" />
+        <option value="$PROJECT_DIR$/test_YaseeCorrelationAnalyzer.py" />
+        <option value="$PROJECT_DIR$/exp/sklearn_exp.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="204" />
-    <option name="y" value="23" />
+    <option name="x" value="47" />
+    <option name="y" value="41" />
     <option name="width" value="1440" />
     <option name="height" value="782" />
   </component>
@@ -185,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,12 +209,12 @@
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
               <item name="yasee" type="462c0819:PsiDirectoryNode" />
-              <item name="exp" type="462c0819:PsiDirectoryNode" />
+              <item name="documentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
               <item name="yasee" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yasee" type="b2602c69:ProjectViewProjectNode" />
@@ -211,12 +224,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -230,9 +244,9 @@
       <recent name="$PROJECT_DIR$/Windows Quick Installation" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/demo" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -247,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="yasee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -270,6 +284,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sklearn_exp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="yasee" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exp/sklearn_exp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="yasee" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="yasee" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,21 +333,6 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_YaseeFreqCharts.YaseeFreqChartsTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_YaseeReportFile.YaseeReportFileTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="yasee" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_YaseeReportFile.YaseeReportFileTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -315,28 +351,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_YaseeWordCloud.YaseeWordCloudTest.test_store" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="yasee" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_YaseeWordCloud.YaseeWordCloudTest.test_store&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.sklearn_exp" />
+        <item itemvalue="Python tests.Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" />
+        <item itemvalue="Python tests.Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" />
         <item itemvalue="Python tests.Unittests for test_YaseeWordCloud.YaseeWordCloudTest" />
-        <item itemvalue="Python tests.Unittests for test_YaseeReportFile.YaseeReportFileTest" />
-        <item itemvalue="Python tests.Unittests for test_YaseeWordCloud.YaseeWordCloudTest.test_store" />
       </list>
     </recent_temporary>
   </component>
@@ -442,21 +463,9 @@
       <workItem from="1562778075013" duration="175000" />
       <workItem from="1562948081623" duration="403000" />
       <workItem from="1562949795860" duration="1941000" />
-      <workItem from="1563207351396" duration="1251000" />
-    </task>
-    <task id="LOCAL-00020" summary="Beta 1.0.1&#10;&#10;- Added some unittests and some minor tweaks.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
-      <created>1561573161170</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1561573161170</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Beta 1.0.2&#10;&#10;- Some minor tweaks.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
-      <created>1561573311619</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1561573311619</updated>
+      <workItem from="1563207351396" duration="1820000" />
+      <workItem from="1563209320911" duration="1000" />
+      <workItem from="1563209605744" duration="6043000" />
     </task>
     <task id="LOCAL-00022" summary="Beta 1.0.3&#10;&#10;- Added a requirements.txt indicating our project dependencies.&#10;&#10;Future direction:&#10;1. Visualize word frequency using a chart.&#10;2. Visualize word frequency in relation to a specific column in the Excel form.&#10;3. Work on documentation.">
       <created>1561574036654</created>
@@ -787,54 +796,68 @@
       <option name="project" value="LOCAL" />
       <updated>1562952437549</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="NL 7-15&#10;Update:&#10;1. Changed the layout of context output file: it now displays entries vertically, making it easier to scroll through.&#10;&#10;Future Direction:&#10;1. Do some research on MI score!">
+      <created>1563208799511</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1563208799512</updated>
+    </task>
+    <task id="LOCAL-00070" summary="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!">
+      <created>1563209040047</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1563209040047</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 24m 17s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 19m 03s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 25m 11s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 19m 32s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 26m 09s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 20m 09s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 27m 10s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 20m 15s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 27m 51s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 20m 38s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 28m 08s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 21m 25s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 29m 27s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 21m 39s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 31m 41s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 22m 00s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 37m 16s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 22m 08s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest - 2019.07.15 at 09h 38m 08s.xml">
-      <configuration name="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest" configurationId="tests" />
+    <history-entry file="Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest - 2019.07.15 at 11h 22m 30s.xml">
+      <configuration name="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88272000" />
+    <option name="totallyTimeSpent" value="94885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="782" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.23032904" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70851374" visible="true" weight="0.15879828" />
       <window_info id="Structure" order="1" sideWeight="0.2914863" side_tool="true" weight="0.4380531" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32853025" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.20869565" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.32608697" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39855072" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -842,9 +865,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.77246374" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.4740634" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50143063" side_tool="true" weight="0.20869565" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.56811595" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.29130435" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3299712" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -931,8 +954,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="7-1 NL1&#10;&#10;- Optimized the structure of YaseeFreqCharts.&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
-    <MESSAGE value="7-1 NL2&#10;&#10;- Optimized the structure of the project.&#10;- Updated the ReportFile module; now we can extract multiple related columns from an Excel file.&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
     <MESSAGE value="7-1 NL3&#10;&#10;- Unified the naming convention of certain classes and functions.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
     <MESSAGE value="7-1 NL4&#10;&#10;- Minor tweaks.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
     <MESSAGE value="7-1 NL5&#10;&#10;- Created a base class YaseeAnalysisClass for analysis classes to inherit from.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column)." />
@@ -956,59 +977,29 @@
     <MESSAGE value="Release 7-9&#10;Update:&#10;1. Optimized visuals.&#10;2. Now displays context of words searched through the Excel form.&#10;3. Added some demos!&#10;&#10;Future Direction:&#10;Develop a web version!" />
     <MESSAGE value="Release 7-10&#10;Update:&#10;1. Optimized YaseeFreqCharts structure.&#10;2. Modified the naming rule of output files.&#10;&#10;Future Direction:&#10;Develop a web version!" />
     <MESSAGE value="NL 7-12&#10;Update:&#10;1. Changed visuals.&#10;2. Changed the context file output: now it is ranked by frequency of appearance!&#10;&#10;Future Direction:&#10;1. Further improve on context output file.&#10;2. Do some research on MI score!" />
-    <option name="LAST_COMMIT_MESSAGE" value="NL 7-12&#10;Update:&#10;1. Changed visuals.&#10;2. Changed the context file output: now it is ranked by frequency of appearance!&#10;&#10;Future Direction:&#10;1. Further improve on context output file.&#10;2. Do some research on MI score!" />
+    <MESSAGE value="NL 7-15&#10;Update:&#10;1. Changed the layout of context output file: it now displays entries vertically, making it easier to scroll through.&#10;&#10;Future Direction:&#10;1. Do some research on MI score!" />
+    <MESSAGE value="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!" />
+    <option name="LAST_COMMIT_MESSAGE" value="7-15 NL2&#10;Update:&#10;1. Changed the context file in the demo directory!&#10;&#10;Future Direction:&#10;1. Do some research on MI score!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yasee$test_YaseeFreqCharts.coverage" NAME="test_YaseeFreqCharts Coverage Results" MODIFIED="1562352693248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeReportFile_YaseeReportFileTest.coverage" NAME="Unittests for test_YaseeReportFile.YaseeReportFileTest Coverage Results" MODIFIED="1562777149399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeWordCloud_YaseeWordCloudTest_test_store.coverage" NAME="Unittests for test_YaseeWordCloud.YaseeWordCloudTest.test_store Coverage Results" MODIFIED="1562360043504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest.coverage" NAME="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest Coverage Results" MODIFIED="1563208677670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeFreqCharts_YaseeFreqChartsTest.coverage" NAME="Unittests for test_YaseeFreqCharts.YaseeFreqChartsTest Coverage Results" MODIFIED="1563209893109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$test_AnalysisClass.coverage" NAME="test_AnalysisClass Coverage Results" MODIFIED="1562351058358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$sklearn_exp.coverage" NAME="sklearn_exp Coverage Results" MODIFIED="1563214998738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exp" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_AnalysisClass_YaseeAnalysisClassTest.coverage" NAME="Unittests for test_AnalysisClass.YaseeAnalysisClassTest Coverage Results" MODIFIED="1562351062556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1562951579081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$main.coverage" NAME="main Coverage Results" MODIFIED="1563215869362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_in_test_YaseeReportFile_py.coverage" NAME="Unittests in test_YaseeReportFile.py Coverage Results" MODIFIED="1562175861508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeCorrelationAnalyzer_YaseeCorrelationAnalyzerTest.coverage" NAME="Unittests for test_YaseeCorrelationAnalyzer.YaseeCorrelationAnalyzerTest Coverage Results" MODIFIED="1563214949489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeAnalysisClass_YaseeAnalysisClassTest.coverage" NAME="Unittests for test_YaseeAnalysisClass.YaseeAnalysisClassTest Coverage Results" MODIFIED="1562352446805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/yasee$Unittests_for_test_YaseeWordCloud_YaseeWordCloudTest.coverage" NAME="Unittests for test_YaseeWordCloud.YaseeWordCloudTest Coverage Results" MODIFIED="1562777171871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/RelatedWordRootFreq 're'.png" />
-    <entry file="file://$PROJECT_DIR$/demo/RelatedWordSuffixtFreq 'ation'.png" />
-    <entry file="file://$PROJECT_DIR$/demo/WordFreqChartExcluding'word'.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordRelativeFreq 'research'.png" />
-    <entry file="file://$PROJECT_DIR$/demo/WordFreqChart Top20.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/WordFreqChart.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/WordCloud.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/RelatedRE 5-letter-word.png" />
-    <entry file="file://$PROJECT_DIR$/demo/RelatedWordFreq 'research'.png" />
-    <entry file="file://$PROJECT_DIR$/demo/RelatedWordRelativeFreq 'research'.png.txt" />
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research'.png.txt" />
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're'.png.txt" />
-    <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word.png" />
-    <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word.png.txt" />
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research'.png" />
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're'.png" />
     <entry file="file://$PROJECT_DIR$/hihi Absolute.txt" />
     <entry file="file://$PROJECT_DIR$/hihi Absolute ABSOLUTE.png" />
     <entry file="file://$PROJECT_DIR$/hihi Absolute RELATIVE.png" />
     <entry file="file://$PROJECT_DIR$/fj.png" />
-    <entry file="file://$PROJECT_DIR$/YaseeAnalysisClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="e#73#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1016,40 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_YaseeReportFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#19#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_YaseeAnalysisClass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_YaseeStopWords.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,16 +1033,6 @@
     <entry file="file://$PROJECT_DIR$/demo/RelatedWordSuffixtFreq 'ation' ABSOLUTE.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/RelatedWordFreq 'research'.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeReportFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_YaseeWordCloud.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1092,23 +1043,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="34" column="99" selection-start-line="34" selection-start-column="99" selection-end-line="34" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research' RELATIVE.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/chart ABSOLUTE.png" />
     <entry file="file://$PROJECT_DIR$/chart RELATIVE.png" />
     <entry file="file://$PROJECT_DIR$/chart.txt" />
+    <entry file="file://$PROJECT_DIR$/test_YaseeAnalysisClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/RelatedWordFreq 'research'.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-167" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research' ABSOLUTE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're'.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're' RELATIVE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WordFreqChart Top20.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation' ABSOLUTE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation' RELATIVE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word ABSOLUTE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WordFreqChartExcluding'word'.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation'.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/WordFreqChart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/RelatedRE 5-letter-word ABSOLUTE.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YaseeWordCloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="34" column="99" selection-start-line="34" selection-start-column="99" selection-end-line="34" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_YaseeReportFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#19#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YaseeStopWords.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4465">
+        <state relative-caret-position="770">
           <caret line="235" selection-start-line="235" selection-end-line="235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YaseeAnalysisClass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#73#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YaseeReportFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/metrics/cluster/supervised.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp/panda_exp.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_YaseeStopWords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1119,53 +1172,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation' ABSOLUTE.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/MI_SCORE_TEST.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/UCIWC_DEFAULTSTOPWORDS.py">
+    <entry file="file://$PROJECT_DIR$/exp/hi.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordRootFreq 're'.txt">
+    <entry file="file://$PROJECT_DIR$/demo/MI_SCORES RESEARCH.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word ABSOLUTE.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordFreq 'research'.txt">
+    <entry file="file://$PROJECT_DIR$/exp/sklearn_exp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167" />
+        <state relative-caret-position="133">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/RelatedRE 5-letter-word.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3943" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RelatedWordSuffixtFreq 'ation'.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/test/MI_SCORES RESEARCH.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="108" column="26" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
+        <state relative-caret-position="1611">
+          <caret line="174" column="12" lean-forward="true" selection-start-line="174" selection-start-column="12" selection-end-line="174" selection-end-column="92" />
           <folding>
-            <element signature="e#17#58#0" expanded="true" />
+            <element signature="e#64#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YaseeFreqCharts.py">
+    <entry file="file://$PROJECT_DIR$/test_YaseeCorrelationAnalyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="175" column="55" lean-forward="true" selection-start-line="175" selection-start-column="55" selection-end-line="175" selection-end-column="55" />
+        <state relative-caret-position="114">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding>
-            <element signature="e#64#105#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YaseeCorrelationAnalyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="e#17#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
