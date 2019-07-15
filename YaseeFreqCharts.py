@@ -17,8 +17,6 @@ class NoSearchResultsFound(YaseeFreqChartsError):
 
 
 def gen_verification(str_expr: str) -> Callable:
-
-
     if str_expr[-1] == '*':
         def f(words: str) -> bool:
             begin_words = str_expr[:-1]
