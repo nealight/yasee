@@ -1,6 +1,6 @@
 Project yasee
 ---
-A meta visualization/data analysis tool to help researchers answer the eternal question "Where should I start?", tailored for consultation data
+A meta visualization/analysis tool to help researchers with textual data find a starting point for their research, tailored for consultation data
 provided by the Writing Center in University of California, Irvine.
 
 
