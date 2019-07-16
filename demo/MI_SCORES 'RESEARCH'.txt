@@ -1,0 +1,5 @@
+"RESEARCH" Mutual Information Scores with respect to:
+
+
+CourseDeptID: 0.6931471805599453
+MajorID1: 0.0

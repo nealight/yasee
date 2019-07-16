@@ -28,7 +28,7 @@ class YaseeCorrelationAnalyzer(YaseeFreqCharts):
         try:
             combine_as_lines = lambda x, y: f"{x}\n{y}"
             combine_as_entry = lambda x, y: f"{x}: {y}"
-            file.write(f'"{target_expr.upper()}" MI scores with respect to:\n\n\n')
+            file.write(f'"{target_expr.upper()}" Mutual Information Scores with respect to:\n\n\n')
             file.write(reduce(combine_as_lines, (reduce(combine_as_entry, entry) for entry in
                                                  sorted(MI_dict.items(), key=lambda x: -x[1]))))
 

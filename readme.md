@@ -13,6 +13,10 @@ Faculty Adviser: Professor Percival Guevarra
 
 Notes
 ---
+7/16/2019 Note:
+Mutual Information scores can now be calculated (using the awesome "sklearn" library).
+
+
 7/10/2019 Note:
 A "context file" in txt format is now included in the demo directory. The file points to where the target expression is found and their respective contexts.
 
