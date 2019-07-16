@@ -5,7 +5,6 @@ from YaseeCorrelationAnalyzer import YaseeCorrelationAnalyzer
 from YaseeFreqCharts import YaseeFreqCharts
 from YaseeFreqCharts import NoSearchResultsFound
 from YaseeAnalysisClass import YaseeAnalysisClass
-from functools import reduce
 
 
 
@@ -71,7 +70,6 @@ class Console():
                 analysis:YaseeCorrelationAnalyzer = init_analysis_class(YaseeCorrelationAnalyzer)
                 print("What would be the name of your analysis file?")
                 output_path = input().strip()
-                output_path = (output_path + ".txt") if (".txt" not in output_path) else output_path
 
 
                 print("Which excel sheet to analyze?")
@@ -89,14 +87,7 @@ class Console():
                       "Examples: pre*, *ation, research, ...")
                 target_expression = input().strip()
 
-                analysis.storeMIs(output_path, target_sheet, data_column, target_expression)
-                file = open(output_path, 'r')
-                try:
-                    print("========================================")
-                    print(reduce(lambda x, y: x+y, file.readlines()))
-                    print("========================================")
-                finally:
-                    file.close()
+                print(analysis.storeMIs(output_path, target_sheet, data_column, target_expression))
 
 
                 print("And what column to analyze in relation to the previously chosen column?")

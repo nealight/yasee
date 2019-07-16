@@ -77,7 +77,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
         YaseeFreqCharts.storeChart(file_name + " RELATIVE", f"\"{target_expr.upper()}\" "
-        f"{'Relative Frequency(%)'} "
+        f"{'Relative Frequency'} "
         f"in Relation to {identity_column}", relative_ranked, identity_column)
 
         YaseeFreqCharts.storeChart(file_name + " ABSOLUTE", f"\"{target_expr.upper()}\" "
@@ -85,8 +85,6 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         f"in Relation to {identity_column}", absolute_ranked, identity_column)
 
         YaseeFreqCharts.storeContextasTXT(file_name, target_expr, context)
-
-
 
 
     @staticmethod
@@ -125,6 +123,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         if len(ranked_freq) == 0:
             raise NoSearchResultsFound
 
+
         xAxis_widths = [len(word) for word, freq in ranked_freq]
         indexes = [xAxis_widths[0], ]
         for i in range(1, len(xAxis_widths)):
@@ -140,7 +139,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                       fontsize=canvas_width * 0.5)
         pyplot.yticks(fontsize=canvas_length * 1)
         pyplot.xlabel(categories, fontweight='bold', fontsize=canvas_width, horizontalalignment='center')
-        pyplot.ylabel("Frequency", fontweight='bold', fontsize=canvas_length * 1.25, horizontalalignment='center')
+        pyplot.ylabel("Frequency (%)" if 'relative' in chart_name.lower() else "Frequency(times)", fontweight='bold', fontsize=canvas_length * 1.25, horizontalalignment='center')
 
         pyplot.title(chart_name, fontweight='bold', color='orange', fontsize=canvas_width * 1.5,
                      horizontalalignment='center')

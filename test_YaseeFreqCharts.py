@@ -46,7 +46,7 @@ class YaseeFreqChartsTest(unittest.TestCase):
         self.assertTrue(os.path.exists("test/RelatedWordSuffixtFreq 'ation'.txt"))
 
     def test_storeRelatedRECase1(self):
-        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "regex:(\w){5}",
+        self.yfc.storeRelatedWordFreq("FQ18", "MajorID1", "VisitNotes", "regex:^(\w){5}$",
                                       "test/RelatedRE 5-letter-word")
         self.assertTrue(os.path.exists("test/RelatedRE 5-letter-word ABSOLUTE.png"))
         self.assertTrue(os.path.exists("test/RelatedRE 5-letter-word RELATIVE.png"))

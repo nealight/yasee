@@ -3,9 +3,11 @@ from YaseeFreqCharts import YaseeFreqCharts
 from functools import reduce
 
 class YaseeCorrelationAnalyzer(YaseeFreqCharts):
-    def storeMIs(self, file_name:str, sheet:str, target_column:str, target_expr:str):
+
+    def storeMIs(self, file_name:str, sheet:str, target_column:str, target_expr:str) -> str:
         MIs = self._calcMIScores(sheet, target_column, target_expr)
         self.storeMIScoresAsTXT(MIs, file_name, target_expr)
+        return self.consoleMIScores(MIs)
 
     def _calcMIScores(self, sheet:str, target_column:str, target_expr:str) -> dict:
 
@@ -22,14 +24,22 @@ class YaseeCorrelationAnalyzer(YaseeFreqCharts):
         return MI_dict
 
     @staticmethod
+    def consoleMIScores(MI_dict:dict) -> str:
+        return "\n========================================\n" \
+               "You have the following columns to visualize correlation, ranked by their " \
+               "respective Mutual Information Scores.\n" + \
+               reduce(YaseeCorrelationAnalyzer.combine_as_lines,
+                      (reduce(YaseeCorrelationAnalyzer.combine_as_entry, entry) for entry in sorted(MI_dict.items(), key=lambda x: -x[1]))) + \
+               "\n========================================\n"
+
+
+    @staticmethod
     def storeMIScoresAsTXT(MI_dict:dict, file_name:str, target_expr:str) -> None:
         file = open((file_name + ".txt") if (".txt" not in file_name) else file_name, 'w')
 
         try:
-            combine_as_lines = lambda x, y: f"{x}\n{y}"
-            combine_as_entry = lambda x, y: f"{x}: {y}"
             file.write(f'"{target_expr.upper()}" Mutual Information Scores with respect to:\n\n\n')
-            file.write(reduce(combine_as_lines, (reduce(combine_as_entry, entry) for entry in
+            file.write(reduce(YaseeCorrelationAnalyzer.combine_as_lines, (reduce(YaseeCorrelationAnalyzer.combine_as_entry, entry) for entry in
                                                  sorted(MI_dict.items(), key=lambda x: -x[1]))))
 
         finally:

@@ -4,6 +4,9 @@ from YaseeStopWords import YaseeStopWords
 from YaseeReportFile import YaseeReportFile
 
 class YaseeAnalysisClass():
+    combine_as_lines = lambda x, y: f"{x}\n{y}"
+    combine_as_entry = lambda x, y: f"{x}: {y}"
+
     def __init__(self, path: str, stopwords: YaseeStopWords or frozenset = None):
         if stopwords == None:
             self._ysw = YaseeStopWords()
