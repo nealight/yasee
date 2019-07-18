@@ -171,7 +171,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
         try:
             combine_as_lines = lambda x, y: f"{x}\n{y}"
             combine_as_entry = lambda x, y: f"{x}, {y}"
-            file.write(f'"{target_expr.upper()}" context referred to by line number:\n\n\n')
+            file.write(f'"{target_expr.upper()}" context referred to by line number [showing {context.__len__()} different categories]:\n\n\n')
             file.write(reduce(combine_as_lines, ((str(i) + f"[{str(len(c))} time(s)]:\n(line number, exact word, context)\n"
             + reduce(combine_as_lines, (f"({reduce(combine_as_entry, c)})" for c in sorted(c))) + "\n\n") for i, c in context)))
         finally:
