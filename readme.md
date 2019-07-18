@@ -14,7 +14,7 @@ Faculty Adviser: Professor Percival Guevarra
 Notes
 ---
 7/16/2019 Note:
-Mutual Information scores can now be calculated (using the awesome "sklearn" library).
+Mutual Information scores can now be calculated (using the awesome "sklearn" library). Dependencies of this project is updated accordingly as a result.
 
 
 7/10/2019 Note:
