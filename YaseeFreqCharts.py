@@ -71,20 +71,18 @@ class YaseeFreqCharts(YaseeAnalysisClass):
                              file_name: str, top_X: int = 5) -> None:
         correlation_data = self._report_file.extractRelatedColumns(sheet_name, identity_column,
                                                                    data_column)
-        (relative_ranked, absolute_ranked, context) = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_expr.lower())
-        (relative_ranked, absolute_ranked) = (relative_ranked[:top_X], absolute_ranked[:top_X])
-
+        (relative_ranked, absolute_ranked, ABS_context, REL_context) = YaseeFreqCharts.calcRelatedWordFreq(correlation_data, target_expr.lower())
 
 
         YaseeFreqCharts.storeChart(file_name + " RELATIVE", f"\"{target_expr.upper()}\" "
         f"{'Relative Frequency'} "
-        f"in Relation to {identity_column}", relative_ranked, identity_column)
+        f"in Relation to {identity_column}", relative_ranked[:top_X], identity_column)
 
         YaseeFreqCharts.storeChart(file_name + " ABSOLUTE", f"\"{target_expr.upper()}\" "
         f"{'Absolute Frequency'} "
-        f"in Relation to {identity_column}", absolute_ranked, identity_column)
+        f"in Relation to {identity_column}", absolute_ranked[:top_X], identity_column)
 
-        YaseeFreqCharts.storeContextasTXT(file_name, target_expr, context)
+        YaseeFreqCharts.storeContextasTXT(file_name, target_expr, ABS_context, REL_context)
 
 
     @staticmethod
@@ -116,7 +114,7 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
         return (sorted(relative_word_freq_dict.items(), key=lambda x: -x[1]), sorted(word_freq_dict.items(), key=lambda x: -x[1]),
-                sorted(context_dict.items(), key=lambda x:-len(x[1])))
+                sorted(context_dict.items(), key=lambda x:-len(x[1])), sorted(context_dict.items(), key=lambda x:-len(x[1]) / identity_dict[x[0]] * 100))
 
     @staticmethod
     def storeChart(file_name: str, chart_name: str, ranked_freq: [tuple], categories:str) -> None:
@@ -164,15 +162,26 @@ class YaseeFreqCharts(YaseeAnalysisClass):
 
 
     @staticmethod
-    def storeContextasTXT(file_name: str, target_expr: str, context:()) -> None:
+    def storeContextasTXT(file_name: str, target_expr: str, ABS_context:(), REL_context:()) -> None:
         # Tried a little bit of functional programming paradigm here!
 
-        file = open((file_name + ".txt") if (".txt" not in file_name) else file_name, 'w')
+        file_name = file_name[:-4] if file_name[-4:] == ".txt" else file_name
+
+        file_ABSRanked = open(file_name + " ABSOLUTE FREQ RANKED.txt", 'w')
+        file_RELRanked = open(file_name + " RELATIVE FREQ RANKED.txt", 'w')
+
         try:
             combine_as_lines = lambda x, y: f"{x}\n{y}"
             combine_as_entry = lambda x, y: f"{x}, {y}"
-            file.write(f'"{target_expr.upper()}" context referred to by line number [showing {context.__len__()} different categories]:\n\n\n')
-            file.write(reduce(combine_as_lines, ((str(i) + f"[{str(len(c))} time(s)]:\n(line number, exact word, context)\n"
-            + reduce(combine_as_lines, (f"({reduce(combine_as_entry, c)})" for c in sorted(c))) + "\n\n") for i, c in context)))
+            file_ABSRanked.write(f'"{target_expr.upper()}" context referred to by line number [showing {ABS_context.__len__()} different categories]:\n\n\n')
+            file_ABSRanked.write(reduce(combine_as_lines, ((str(i) + f"[{str(len(c))} time(s)]:\n(line number, exact word, context)\n"
+            + reduce(combine_as_lines, (f"({reduce(combine_as_entry, c)})" for c in sorted(c))) + "\n\n") for i, c in ABS_context)))
+
+            file_RELRanked.write(f'"{target_expr.upper()}" context referred to by line number [showing {REL_context.__len__()} different categories]:\n\n\n')
+            file_RELRanked.write(reduce(combine_as_lines, ((str(i) + f"[{str(len(c))} time(s)]:\n(line number, exact word, context)\n"
+            + reduce(combine_as_lines, (f"({reduce(combine_as_entry, c)})" for c in sorted(c))) + "\n\n") for i, c in REL_context)))
+
+
         finally:
-            file.close()
+            file_ABSRanked.close()
+            file_RELRanked.close()

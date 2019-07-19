@@ -17,7 +17,7 @@ class YaseeCorrelationAnalyzer(YaseeFreqCharts):
         MI_dict = dict()
         for current_col in column_names:
             correlation_data = self._report_file.extractRelatedColumns(sheet, current_col, target_column)
-            correlation, _, _ = self.calcRelatedWordFreq(correlation_data, target_expr)
+            correlation, _, _, _ = self.calcRelatedWordFreq(correlation_data, target_expr)
             if len(correlation) != 0:
                 MI_dict[current_col] = metrics.mutual_info_score([x[0] for x in correlation], [x[1] for x in correlation])
 
