@@ -22,7 +22,7 @@ class Console():
             print("Hi! You have the following options\n"
                   "a) word cloud\n"
                   "b) word freq chart\n"
-                  "c) specified expression freq chart in relation to a column\n"
+                  "c) specified expression analysis\n"
                   "q) quit\n", end="")
             user_prompt = input().strip().lower()
 
