@@ -13,6 +13,11 @@ Faculty Adviser: Professor Percival Guevarra
 
 Notes
 ---
+7/23/2019 Note:
+Everything is finished! Documentations are written to provide insight into the structure and functionality of
+the project. A presentation will be delivered on 7/29 in the UCI writing center.
+
+
 7/16/2019 Note:
 Mutual Information scores can now be calculated (using the awesome "sklearn" library). Dependencies of this project is updated accordingly as a result.
 
