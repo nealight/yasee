@@ -13,6 +13,10 @@ Faculty Adviser: Professor Percival Guevarra
 
 Notes
 ---
+7/29/2019 Note:
+The presentation is updated in the demo directory.
+
+
 7/23/2019 Note:
 Everything is finished! Documentations are written to provide insight into the structure and functionality of
 the project. A presentation will be delivered on 7/29 in the UCI writing center.
