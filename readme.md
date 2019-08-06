@@ -8,7 +8,19 @@ People
 ---
 Main contributor: Yi (Alan) Xu
 
+Other contributors: Anthony Park
 Faculty Adviser: Professor Percival Guevarra
+
+
+Logistics / Timeline
+---
+A project carried out in UC Irvine Summer Session I:
+Week 0: Draft proposal
+Week 1-5: Development
+Final Week: Presentation/Delivery
+
+Presentation can be found in the demo directory. 
+
 
 
 Notes
@@ -42,12 +54,6 @@ in this public repo for privacy concerns.
 6/24/2019 Note:
 A sample file mimicking the format of those used in the UCI writing center is provided. 
 No data is included.
-
-
-Logistics / Timeline
----
-A 5-week project.
-
 
 License
 ---
