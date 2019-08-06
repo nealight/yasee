@@ -9,6 +9,7 @@ People
 Main contributor: Yi (Alan) Xu
 
 Other contributors: Anthony Park
+
 Faculty Adviser: Professor Percival Guevarra
 
 
