@@ -15,11 +15,14 @@ Faculty Adviser: Professor Percival Guevarra
 Logistics / Timeline
 ---
 A project carried out in UC Irvine Summer Session I:
+
 Week 0: Draft proposal
+
 Week 1-5: Development
+
 Final Week: Presentation/Delivery
 
-Presentation can be found in the demo directory. 
+The demo/documentation directories are where you can locate descriptions of various aspects of the project.
 
 
 
