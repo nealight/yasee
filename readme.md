@@ -3,6 +3,8 @@ Project yasee
 A meta visualization/analysis tool to help researchers with textual data find a starting point for their research, tailored for consultation data
 provided by the Writing Center in University of California, Irvine.
 
+Quick demo: https://github.com/nealight/yasee/tree/master/demo
+
 
 People
 ---
