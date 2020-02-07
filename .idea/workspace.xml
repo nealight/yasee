@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1e895674-a774-465d-9e1f-9e01ddecb6fa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,13 +317,7 @@
       <workItem from="1565078026006" duration="124000" />
       <workItem from="1570921156156" duration="25000" />
       <workItem from="1572812147004" duration="60000" />
-    </task>
-    <task id="LOCAL-00037" summary="7-1 NL2&#10;&#10;- Optimized the structure of the project.&#10;- Updated the ReportFile module; now we can extract multiple related columns from an Excel file.&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column).">
-      <created>1562018838263</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1562018838263</updated>
+      <workItem from="1581054800928" duration="40000" />
     </task>
     <task id="LOCAL-00038" summary="7-1 NL3&#10;&#10;- Unified the naming convention of certain classes and functions.&#10;&#10;&#10;Future direction:&#10;1. Support visualization of phrase frequency.&#10;2. Support visualization of word root frequency&#10;3. Visualize word frequency in relation to a specific category (Excel form column).">
       <created>1562040224532</created>
@@ -663,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564434067065</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Final Release&#10;&#10;Finished all documentations and last-minute bug fixes.">
+      <created>1581054837040</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1581054837041</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TestHistory">
