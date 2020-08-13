@@ -19,11 +19,11 @@ Logistics / Timeline
 ---
 A project carried out in UC Irvine Summer Session I:
 
-Week 0: Draft proposal
+Phase 1: Draft proposal
 
-Week 1-5: Development
+Phase 2: Development
 
-Final Week: Presentation/Delivery
+Final Phase: Presentation/Delivery
 
 The demo/documentation directories are where you can locate descriptions of various aspects of the project.
 
